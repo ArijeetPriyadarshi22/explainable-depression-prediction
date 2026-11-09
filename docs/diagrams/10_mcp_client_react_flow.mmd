@@ -1,0 +1,81 @@
+%% MCP client adaptive ReAct flow for architecture/mcp_modular_agent/mcp_client.py.
+flowchart TD
+    A[User passage<br/>and participant question]:::interface
+    B[bot.py<br/>_run_planner_answer]:::interface
+    C[run_mcp_pipeline<br/>sync entrypoint]:::controller
+    D[run_mcp_pipeline_async<br/>async wrapper]:::controller
+    E[Start MCP stdio session<br/>python -m mcp_server]:::server
+    F[MCPToolClient<br/>session adapter]:::controller
+
+    G[Discover MCP tools<br/>list_tools]:::process
+    H[Filter available actions<br/>explain_shap, explain_rag, explain_counterfactual]:::process
+    I[Call predict_depression<br/>prediction context]:::tool
+
+    J[Initialize ReAct state<br/>observations, used_actions, agent_trace]:::data
+    K{Step 1 to 3}:::decision
+    L[Build controller prompt<br/>question, prediction, available actions,<br/>used tools, previous observations]:::prompt
+    M[Gemini controller<br/>strict JSON decision]:::llm
+    N{Valid action?}:::decision
+    O[Deterministic fallback<br/>keyword and observation rules]:::fallback
+    P{Selected action}:::decision
+
+    Q[finish<br/>stop planning loop]:::output
+    R[Call explain_shap<br/>raw SHAP result]:::tool
+    S[Call explain_rag<br/>raw RAG result]:::tool
+    T[Call explain_counterfactual<br/>raw CF result]:::tool
+
+    U[Server serializes result<br/>JSON-safe payload]:::server
+    V[Client extracts MCP payload<br/>structured content or text JSON]:::process
+    W[Deserialize result<br/>restore original dataclass]:::process
+    X[Summarize observation<br/>append observation and trace]:::data
+    Y{More evidence needed<br/>and step remains?}:::decision
+
+    Z{Any tool output?}:::decision
+    AA[Fallback SHAP call<br/>ensure one explanation]:::fallback
+    AB[Build raw_results<br/>shap, rag, counterfactual]:::data
+    AC{Available raw results}:::decision
+    AD[generate_shap_explanation]:::generator
+    AE[generate_rag_explanation]:::generator
+    AF[generate_cf_explanation]:::generator
+    AG[generate_hybrid_explanation]:::generator
+    AH[Return final payload<br/>explanation, selected tools,<br/>observations, trace, errors]:::output
+
+    A --> B --> C --> D --> E --> F
+    F --> G --> H --> I --> J --> K
+    K --> L --> M --> N
+    N -->|invalid JSON, unavailable,<br/>or repeated action| O --> P
+    N -->|valid JSON| P
+
+    P -->|finish| Q
+    P -->|explain_shap| R
+    P -->|explain_rag| S
+    P -->|explain_counterfactual| T
+
+    R --> U
+    S --> U
+    T --> U
+    U --> V --> W --> X --> Y
+    Y -->|yes| K
+    Y -->|no| Q
+
+    Q --> Z
+    Z -->|no output and fallback enabled| AA --> AB
+    Z -->|has output| AB
+    AB --> AC
+    AC -->|only SHAP| AD --> AH
+    AC -->|only RAG| AE --> AH
+    AC -->|only CF| AF --> AH
+    AC -->|multiple tools| AG --> AH
+
+    classDef interface fill:#F8FAFC,stroke:#334155,color:#111827,rx:8,ry:8;
+    classDef controller fill:#E0F2FE,stroke:#0369A1,color:#0F172A,rx:8,ry:8;
+    classDef server fill:#DBEAFE,stroke:#1D4ED8,color:#0F172A,rx:8,ry:8;
+    classDef process fill:#E0F2FE,stroke:#0369A1,color:#0F172A,rx:8,ry:8;
+    classDef prompt fill:#F5F3FF,stroke:#7C3AED,color:#111827,rx:8,ry:8;
+    classDef llm fill:#FEF3C7,stroke:#B45309,color:#0F172A,rx:8,ry:8;
+    classDef tool fill:#ECFDF5,stroke:#047857,color:#0F172A,rx:8,ry:8;
+    classDef data fill:#F1F5F9,stroke:#475569,color:#0F172A,rx:8,ry:8;
+    classDef decision fill:#FFF7ED,stroke:#C2410C,color:#0F172A,rx:8,ry:8;
+    classDef fallback fill:#FEF2F2,stroke:#B91C1C,color:#0F172A,rx:8,ry:8;
+    classDef generator fill:#FFF7ED,stroke:#C2410C,color:#0F172A,rx:8,ry:8;
+    classDef output fill:#F8FAFC,stroke:#0F766E,color:#0F172A,rx:8,ry:8;

@@ -1,0 +1,17 @@
+Explanation type,Rating dimension,N trials,N participants,Mean,SD,Median,IQR,95% CI lower,95% CI upper
+Counterfactual,Clarity,66,14,3.697,1.277,4.0,2.0,3.389,4.005
+Counterfactual,Correctness,66,14,3.576,1.11,4.0,1.0,3.308,3.844
+Counterfactual,Helpfulness,66,14,3.682,1.152,4.0,2.0,3.404,3.96
+Counterfactual,Trust,66,14,3.5,1.154,4.0,1.0,3.222,3.778
+Hybrid,Clarity,63,16,3.905,1.241,4.0,2.0,3.598,4.211
+Hybrid,Correctness,63,16,3.889,1.123,4.0,2.0,3.612,4.166
+Hybrid,Helpfulness,63,16,3.683,1.162,4.0,2.0,3.396,3.969
+Hybrid,Trust,63,16,3.651,1.124,4.0,1.0,3.373,3.928
+RAG,Clarity,64,15,4.109,1.183,4.0,1.0,3.819,4.399
+RAG,Correctness,64,15,3.875,1.228,4.0,2.0,3.574,4.176
+RAG,Helpfulness,64,15,3.656,1.211,4.0,1.25,3.359,3.953
+RAG,Trust,64,15,3.672,1.235,4.0,2.0,3.369,3.974
+SHAP,Clarity,70,15,3.771,1.265,4.0,2.0,3.475,4.068
+SHAP,Correctness,70,15,3.671,1.151,4.0,1.0,3.402,3.941
+SHAP,Helpfulness,70,15,3.614,1.067,4.0,1.0,3.364,3.864
+SHAP,Trust,70,15,3.643,1.064,4.0,1.0,3.394,3.892

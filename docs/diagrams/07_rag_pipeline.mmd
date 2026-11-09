@@ -1,0 +1,32 @@
+%% RAG pipeline implemented by architecture/rag_explainer.
+flowchart TB
+    A[PHQ-8 knowledge base CSV<br/>shared/phq8_knowledge_base.csv]:::data
+    B[Parse symptom rows<br/>rag_retriever._load_csv]:::process
+    C[Build embedded chunks<br/>definition, patterns, severity signals]:::process
+    D[SentenceTransformer<br/>all-MiniLM-L6-v2]:::model
+    E[FAISS IndexFlatL2<br/>in-memory vector index]:::data
+
+    Q[Input text sample]:::interface
+    P[predict_proba<br/>and classify_severity]:::tool
+    QE[Embed query]:::process
+    K[Similarity retrieval<br/>top_k = 3 in MCP server]:::process
+    RD[RetrievedDoc list<br/>symptom themes and distances]:::data
+    RG[RAGResult raw result]:::data
+    GG[generate_rag_explanation<br/>client-side final generator]:::generator
+    L[Gemini final wording]:::llm
+    O[RAG explanation]:::output
+
+    A --> B --> C --> D --> E
+    Q --> P --> RG
+    Q --> QE --> K
+    E --> K --> RD --> RG
+    RG --> GG --> L --> O
+
+    classDef interface fill:#F8FAFC,stroke:#334155,color:#111827,rx:8,ry:8;
+    classDef process fill:#E0F2FE,stroke:#0369A1,color:#0F172A,rx:8,ry:8;
+    classDef tool fill:#ECFDF5,stroke:#047857,color:#0F172A,rx:8,ry:8;
+    classDef model fill:#FEF3C7,stroke:#B45309,color:#0F172A,rx:8,ry:8;
+    classDef data fill:#F1F5F9,stroke:#475569,color:#0F172A,rx:8,ry:8;
+    classDef generator fill:#FFF7ED,stroke:#C2410C,color:#0F172A,rx:8,ry:8;
+    classDef llm fill:#FEF3C7,stroke:#B45309,color:#0F172A,rx:8,ry:8;
+    classDef output fill:#F8FAFC,stroke:#0F766E,color:#0F172A,rx:8,ry:8;

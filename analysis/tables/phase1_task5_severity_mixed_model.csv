@@ -1,0 +1,5 @@
+dimension,method,model,n_trials,n_participants,lr_chi2,df,p_value,converged,interpretation_note
+Clarity,"Exploratory linear mixed-effects model, likelihood-ratio test",rating ~ severity + (1 | participant),263,16,0.5516,2,0.75898,True,Secondary severity check; not the main Phase 1 research question.
+Correctness,"Exploratory linear mixed-effects model, likelihood-ratio test",rating ~ severity + (1 | participant),263,16,2.2837,2,0.319234,True,Secondary severity check; not the main Phase 1 research question.
+Helpfulness,"Exploratory linear mixed-effects model, likelihood-ratio test",rating ~ severity + (1 | participant),263,16,2.0687,2,0.355463,True,Secondary severity check; not the main Phase 1 research question.
+Trust,"Exploratory linear mixed-effects model, likelihood-ratio test",rating ~ severity + (1 | participant),263,16,5.2805,2,0.071343,True,Secondary severity check; not the main Phase 1 research question.

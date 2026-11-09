@@ -1,0 +1,25 @@
+system,severity,dimension,n_trials,n_participants,mean,sd,median,iqr,ci95_low,ci95_high
+mentallama,no depression,Helpfulness,17,12,3.235,1.437,4.0,2.0,2.552,3.919
+mentallama,no depression,Correctness,17,12,2.941,1.6,4.0,3.0,2.181,3.702
+mentallama,no depression,Clarity,17,12,3.353,0.996,4.0,1.0,2.879,3.827
+mentallama,no depression,Trust,17,12,2.529,1.546,2.0,3.0,1.795,3.264
+mentallama,moderate,Helpfulness,20,12,3.85,0.671,4.0,0.0,3.556,4.144
+mentallama,moderate,Correctness,20,12,4.0,0.725,4.0,0.5,3.682,4.318
+mentallama,moderate,Clarity,20,12,3.8,0.894,4.0,0.0,3.408,4.192
+mentallama,moderate,Trust,20,12,3.95,0.826,4.0,0.0,3.588,4.312
+mentallama,severe,Helpfulness,17,10,4.176,0.951,4.0,1.0,3.724,4.629
+mentallama,severe,Correctness,17,10,3.882,1.166,4.0,2.0,3.328,4.437
+mentallama,severe,Clarity,17,10,4.353,0.493,4.0,1.0,4.119,4.587
+mentallama,severe,Trust,17,10,3.824,1.185,4.0,2.0,3.26,4.387
+agentic_xai,no depression,Helpfulness,20,14,3.9,1.21,4.0,2.0,3.37,4.43
+agentic_xai,no depression,Correctness,20,14,4.05,0.945,4.0,1.0,3.636,4.464
+agentic_xai,no depression,Clarity,20,14,4.25,0.639,4.0,1.0,3.97,4.53
+agentic_xai,no depression,Trust,20,14,3.9,1.165,4.0,1.25,3.389,4.411
+agentic_xai,moderate,Helpfulness,14,9,3.786,0.975,4.0,0.75,3.275,4.296
+agentic_xai,moderate,Correctness,14,9,4.0,0.961,4.0,0.75,3.497,4.503
+agentic_xai,moderate,Clarity,14,9,3.714,1.069,4.0,0.75,3.154,4.274
+agentic_xai,moderate,Trust,14,9,3.143,1.099,3.5,2.0,2.567,3.719
+agentic_xai,severe,Helpfulness,19,10,3.526,1.124,4.0,1.0,3.021,4.032
+agentic_xai,severe,Correctness,19,10,3.789,1.032,4.0,1.5,3.326,4.253
+agentic_xai,severe,Clarity,19,10,3.895,0.937,4.0,1.0,3.474,4.316
+agentic_xai,severe,Trust,19,10,3.684,0.946,4.0,1.0,3.259,4.11

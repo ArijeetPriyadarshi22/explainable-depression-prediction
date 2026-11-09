@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="928" viewBox="0 0 940 928">
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#202020}.title{font-size:18px;font-weight:700}.label{font-size:13px;font-weight:700}.small{font-size:11px}.tick{font-size:10px}.axis{stroke:#333;stroke-width:1}.grid{stroke:#dedede;stroke-width:1}
+</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="18" y="28" class="title">Phase 2 Exploratory System by Severity Means</text>
+<text x="18" y="72" class="label">Helpfulness</text>
+<line x1="110" y1="210.00" x2="760" y2="210.00" class="grid"/>
+<text x="98" y="214.00" class="tick" text-anchor="end">1</text>
+<line x1="110" y1="178.50" x2="760" y2="178.50" class="grid"/>
+<text x="98" y="182.50" class="tick" text-anchor="end">2</text>
+<line x1="110" y1="147.00" x2="760" y2="147.00" class="grid"/>
+<text x="98" y="151.00" class="tick" text-anchor="end">3</text>
+<line x1="110" y1="115.50" x2="760" y2="115.50" class="grid"/>
+<text x="98" y="119.50" class="tick" text-anchor="end">4</text>
+<line x1="110" y1="84.00" x2="760" y2="84.00" class="grid"/>
+<text x="98" y="88.00" class="tick" text-anchor="end">5</text>
+<text x="110.00" y="234" class="tick" text-anchor="middle">no depression</text>
+<text x="435.00" y="234" class="tick" text-anchor="middle">moderate</text>
+<text x="760.00" y="234" class="tick" text-anchor="middle">severe</text>
+<line x1="110" y1="210" x2="760" y2="210" class="axis"/>
+<line x1="110" y1="84" x2="110" y2="210" class="axis"/>
+<polyline points="110.00,139.60 435.00,120.22 760.00,109.96" fill="none" stroke="#2f6f73" stroke-width="2.4" opacity="0.9"/>
+<circle cx="110.00" cy="139.60" r="4" fill="#2f6f73"/>
+<circle cx="435.00" cy="120.22" r="4" fill="#2f6f73"/>
+<circle cx="760.00" cy="109.96" r="4" fill="#2f6f73"/>
+<line x1="790" y1="85" x2="814" y2="85" stroke="#2f6f73" stroke-width="2.4"/>
+<text x="820" y="89" class="small">mentallama</text>
+<polyline points="110.00,118.65 435.00,122.24 760.00,130.43" fill="none" stroke="#9b4d3d" stroke-width="2.4" opacity="0.9"/>
+<circle cx="110.00" cy="118.65" r="4" fill="#9b4d3d"/>
+<circle cx="435.00" cy="122.24" r="4" fill="#9b4d3d"/>
+<circle cx="760.00" cy="130.43" r="4" fill="#9b4d3d"/>
+<line x1="790" y1="101" x2="814" y2="101" stroke="#9b4d3d" stroke-width="2.4"/>
+<text x="820" y="105" class="small">agentic_xai</text>
+<text x="18" y="282" class="label">Correctness</text>
+<line x1="110" y1="420.00" x2="760" y2="420.00" class="grid"/>
+<text x="98" y="424.00" class="tick" text-anchor="end">1</text>
+<line x1="110" y1="388.50" x2="760" y2="388.50" class="grid"/>
+<text x="98" y="392.50" class="tick" text-anchor="end">2</text>
+<line x1="110" y1="357.00" x2="760" y2="357.00" class="grid"/>
+<text x="98" y="361.00" class="tick" text-anchor="end">3</text>
+<line x1="110" y1="325.50" x2="760" y2="325.50" class="grid"/>
+<text x="98" y="329.50" class="tick" text-anchor="end">4</text>
+<line x1="110" y1="294.00" x2="760" y2="294.00" class="grid"/>
+<text x="98" y="298.00" class="tick" text-anchor="end">5</text>
+<text x="110.00" y="444" class="tick" text-anchor="middle">no depression</text>
+<text x="435.00" y="444" class="tick" text-anchor="middle">moderate</text>
+<text x="760.00" y="444" class="tick" text-anchor="middle">severe</text>
+<line x1="110" y1="420" x2="760" y2="420" class="axis"/>
+<line x1="110" y1="294" x2="110" y2="420" class="axis"/>
+<polyline points="110.00,358.86 435.00,325.50 760.00,329.22" fill="none" stroke="#2f6f73" stroke-width="2.4" opacity="0.9"/>
+<circle cx="110.00" cy="358.86" r="4" fill="#2f6f73"/>
+<circle cx="435.00" cy="325.50" r="4" fill="#2f6f73"/>
+<circle cx="760.00" cy="329.22" r="4" fill="#2f6f73"/>
+<line x1="790" y1="295" x2="814" y2="295" stroke="#2f6f73" stroke-width="2.4"/>
+<text x="820" y="299" class="small">mentallama</text>
+<polyline points="110.00,323.93 435.00,325.50 760.00,332.15" fill="none" stroke="#9b4d3d" stroke-width="2.4" opacity="0.9"/>
+<circle cx="110.00" cy="323.93" r="4" fill="#9b4d3d"/>
+<circle cx="435.00" cy="325.50" r="4" fill="#9b4d3d"/>
+<circle cx="760.00" cy="332.15" r="4" fill="#9b4d3d"/>
+<line x1="790" y1="311" x2="814" y2="311" stroke="#9b4d3d" stroke-width="2.4"/>
+<text x="820" y="315" class="small">agentic_xai</text>
+<text x="18" y="492" class="label">Clarity</text>
+<line x1="110" y1="630.00" x2="760" y2="630.00" class="grid"/>
+<text x="98" y="634.00" class="tick" text-anchor="end">1</text>
+<line x1="110" y1="598.50" x2="760" y2="598.50" class="grid"/>
+<text x="98" y="602.50" class="tick" text-anchor="end">2</text>
+<line x1="110" y1="567.00" x2="760" y2="567.00" class="grid"/>
+<text x="98" y="571.00" class="tick" text-anchor="end">3</text>
+<line x1="110" y1="535.50" x2="760" y2="535.50" class="grid"/>
+<text x="98" y="539.50" class="tick" text-anchor="end">4</text>
+<line x1="110" y1="504.00" x2="760" y2="504.00" class="grid"/>
+<text x="98" y="508.00" class="tick" text-anchor="end">5</text>
+<text x="110.00" y="654" class="tick" text-anchor="middle">no depression</text>
+<text x="435.00" y="654" class="tick" text-anchor="middle">moderate</text>
+<text x="760.00" y="654" class="tick" text-anchor="middle">severe</text>
+<line x1="110" y1="630" x2="760" y2="630" class="axis"/>
+<line x1="110" y1="504" x2="110" y2="630" class="axis"/>
+<polyline points="110.00,555.88 435.00,541.80 760.00,524.38" fill="none" stroke="#2f6f73" stroke-width="2.4" opacity="0.9"/>
+<circle cx="110.00" cy="555.88" r="4" fill="#2f6f73"/>
+<circle cx="435.00" cy="541.80" r="4" fill="#2f6f73"/>
+<circle cx="760.00" cy="524.38" r="4" fill="#2f6f73"/>
+<line x1="790" y1="505" x2="814" y2="505" stroke="#2f6f73" stroke-width="2.4"/>
+<text x="820" y="509" class="small">mentallama</text>
+<polyline points="110.00,527.62 435.00,544.51 760.00,538.81" fill="none" stroke="#9b4d3d" stroke-width="2.4" opacity="0.9"/>
+<circle cx="110.00" cy="527.62" r="4" fill="#9b4d3d"/>
+<circle cx="435.00" cy="544.51" r="4" fill="#9b4d3d"/>
+<circle cx="760.00" cy="538.81" r="4" fill="#9b4d3d"/>
+<line x1="790" y1="521" x2="814" y2="521" stroke="#9b4d3d" stroke-width="2.4"/>
+<text x="820" y="525" class="small">agentic_xai</text>
+<text x="18" y="702" class="label">Trust</text>
+<line x1="110" y1="840.00" x2="760" y2="840.00" class="grid"/>
+<text x="98" y="844.00" class="tick" text-anchor="end">1</text>
+<line x1="110" y1="808.50" x2="760" y2="808.50" class="grid"/>
+<text x="98" y="812.50" class="tick" text-anchor="end">2</text>
+<line x1="110" y1="777.00" x2="760" y2="777.00" class="grid"/>
+<text x="98" y="781.00" class="tick" text-anchor="end">3</text>
+<line x1="110" y1="745.50" x2="760" y2="745.50" class="grid"/>
+<text x="98" y="749.50" class="tick" text-anchor="end">4</text>
+<line x1="110" y1="714.00" x2="760" y2="714.00" class="grid"/>
+<text x="98" y="718.00" class="tick" text-anchor="end">5</text>
+<text x="110.00" y="864" class="tick" text-anchor="middle">no depression</text>
+<text x="435.00" y="864" class="tick" text-anchor="middle">moderate</text>
+<text x="760.00" y="864" class="tick" text-anchor="middle">severe</text>
+<line x1="110" y1="840" x2="760" y2="840" class="axis"/>
+<line x1="110" y1="714" x2="110" y2="840" class="axis"/>
+<polyline points="110.00,791.84 435.00,747.08 760.00,751.04" fill="none" stroke="#2f6f73" stroke-width="2.4" opacity="0.9"/>
+<circle cx="110.00" cy="791.84" r="4" fill="#2f6f73"/>
+<circle cx="435.00" cy="747.08" r="4" fill="#2f6f73"/>
+<circle cx="760.00" cy="751.04" r="4" fill="#2f6f73"/>
+<line x1="790" y1="715" x2="814" y2="715" stroke="#2f6f73" stroke-width="2.4"/>
+<text x="820" y="719" class="small">mentallama</text>
+<polyline points="110.00,748.65 435.00,772.50 760.00,755.45" fill="none" stroke="#9b4d3d" stroke-width="2.4" opacity="0.9"/>
+<circle cx="110.00" cy="748.65" r="4" fill="#9b4d3d"/>
+<circle cx="435.00" cy="772.50" r="4" fill="#9b4d3d"/>
+<circle cx="760.00" cy="755.45" r="4" fill="#9b4d3d"/>
+<line x1="790" y1="731" x2="814" y2="731" stroke="#9b4d3d" stroke-width="2.4"/>
+<text x="820" y="735" class="small">agentic_xai</text>
+</svg>

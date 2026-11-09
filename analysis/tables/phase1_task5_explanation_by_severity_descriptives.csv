@@ -1,0 +1,49 @@
+explanation_type,severity,dimension,n_trials,n_participants,mean,sd,median,iqr,ci95_low,ci95_high
+SHAP,no depression,Clarity,20,10,3.75,1.372,4.0,2.0,3.149,4.351
+SHAP,moderate,Clarity,24,13,3.875,1.076,4.0,1.25,3.445,4.305
+SHAP,severe,Clarity,26,12,3.692,1.379,4.0,2.0,3.162,4.222
+COUNTERFACTUAL,no depression,Clarity,15,10,3.2,1.699,4.0,3.5,2.34,4.06
+COUNTERFACTUAL,moderate,Clarity,25,13,3.6,1.258,4.0,1.0,3.107,4.093
+COUNTERFACTUAL,severe,Clarity,26,14,4.077,0.891,4.0,1.0,3.734,4.419
+RAG,no depression,Clarity,17,11,4.529,0.717,5.0,1.0,4.188,4.87
+RAG,moderate,Clarity,26,12,4.154,1.008,4.0,1.0,3.767,4.541
+RAG,severe,Clarity,21,12,3.714,1.554,4.0,2.0,3.05,4.379
+HYBRID,no depression,Clarity,12,9,4.0,1.044,4.0,2.0,3.409,4.591
+HYBRID,moderate,Clarity,23,13,3.739,1.389,4.0,2.5,3.172,4.307
+HYBRID,severe,Clarity,28,14,4.0,1.217,4.0,1.0,3.549,4.451
+SHAP,no depression,Correctness,20,10,3.45,1.276,4.0,1.0,2.891,4.009
+SHAP,moderate,Correctness,24,13,3.792,1.021,4.0,1.25,3.383,4.2
+SHAP,severe,Correctness,26,12,3.731,1.185,4.0,1.75,3.275,4.186
+COUNTERFACTUAL,no depression,Correctness,15,10,3.0,1.512,3.0,2.0,2.235,3.765
+COUNTERFACTUAL,moderate,Correctness,25,13,3.44,0.961,3.0,1.0,3.063,3.817
+COUNTERFACTUAL,severe,Correctness,26,14,4.038,0.774,4.0,0.75,3.741,4.336
+RAG,no depression,Correctness,17,11,4.0,1.275,4.0,1.0,3.394,4.606
+RAG,moderate,Correctness,26,12,3.923,1.093,4.0,1.75,3.503,4.343
+RAG,severe,Correctness,21,12,3.714,1.384,4.0,2.0,3.123,4.306
+HYBRID,no depression,Correctness,12,9,4.0,1.044,4.0,2.0,3.409,4.591
+HYBRID,moderate,Correctness,23,13,4.0,1.087,4.0,1.5,3.556,4.444
+HYBRID,severe,Correctness,28,14,3.75,1.206,4.0,2.0,3.303,4.197
+SHAP,no depression,Helpfulness,20,10,3.65,1.226,4.0,1.25,3.113,4.187
+SHAP,moderate,Helpfulness,24,13,3.667,0.917,4.0,1.0,3.3,4.033
+SHAP,severe,Helpfulness,26,12,3.538,1.104,4.0,1.0,3.114,3.963
+COUNTERFACTUAL,no depression,Helpfulness,15,10,3.4,1.502,4.0,3.0,2.64,4.16
+COUNTERFACTUAL,moderate,Helpfulness,25,13,3.48,1.122,4.0,1.0,3.04,3.92
+COUNTERFACTUAL,severe,Helpfulness,26,14,4.038,0.871,4.0,1.75,3.704,4.373
+RAG,no depression,Helpfulness,17,11,3.941,1.345,4.0,1.0,3.302,4.581
+RAG,moderate,Helpfulness,26,12,3.577,1.065,4.0,1.0,3.168,3.986
+RAG,severe,Helpfulness,21,12,3.524,1.289,4.0,1.0,2.972,4.075
+HYBRID,no depression,Helpfulness,12,9,3.583,1.311,3.5,2.0,2.841,4.325
+HYBRID,moderate,Helpfulness,23,13,3.783,1.126,4.0,1.0,3.322,4.243
+HYBRID,severe,Helpfulness,28,14,3.643,1.162,4.0,1.25,3.213,4.073
+SHAP,no depression,Trust,20,10,3.65,1.387,4.0,2.0,3.042,4.258
+SHAP,moderate,Trust,24,13,3.667,0.868,4.0,1.0,3.319,4.014
+SHAP,severe,Trust,26,12,3.615,0.983,4.0,1.0,3.238,3.993
+COUNTERFACTUAL,no depression,Trust,15,10,2.933,1.438,3.0,2.0,2.206,3.661
+COUNTERFACTUAL,moderate,Trust,25,13,3.36,1.036,3.0,1.0,2.954,3.766
+COUNTERFACTUAL,severe,Trust,26,14,3.962,0.916,4.0,1.75,3.61,4.314
+RAG,no depression,Trust,17,11,3.647,1.32,4.0,2.0,3.02,4.275
+RAG,moderate,Trust,26,12,3.654,1.093,4.0,1.0,3.234,4.074
+RAG,severe,Trust,21,12,3.714,1.384,4.0,2.0,3.123,4.306
+HYBRID,no depression,Trust,12,9,3.583,0.9,3.5,1.0,3.074,4.093
+HYBRID,moderate,Trust,23,13,3.565,1.273,4.0,1.0,3.045,4.085
+HYBRID,severe,Trust,28,14,3.75,1.11,4.0,2.0,3.339,4.161

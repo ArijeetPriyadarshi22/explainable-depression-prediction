@@ -1,0 +1,43 @@
+%% Mermaid conversion of docs/diagrams/diagram.png.
+flowchart TD
+    A[User passage + question]
+    B[bot.py calls run_mcp_pipeline]
+    C[mcp_client starts MCP stdio session]
+    D[Launch mcp_server.py as local subprocess]
+    E[Discover MCP tools]
+    F[Call predict_depression]
+    G[Build ReAct controller prompt]
+    H[Gemini chooses one action as JSON]
+    I{Action?}
+
+    J[Call MCP explain_shap]
+    K[Call MCP explain_counterfactual]
+    L[Call MCP explain_rag]
+    M[Serialize raw result on server]
+    N[Client extracts payload]
+    O[Deserialize into original result dataclass]
+    P[Summarize observation]
+    Q{Step &lt; 3 and not finished?}
+
+    R[Stop planning loop]
+    S[Select final explanation generator]
+    T[SHAP / RAG / CF / Hybrid explanation text]
+    U[Return explanation + trace + raw outputs]
+
+    A --> B --> C --> D --> E --> F --> G
+    G --> H --> I
+    I -->|finish| R
+    I -->|explain_shap| J
+    I -->|explain_counterfactual| K
+    I -->|explain_rag| L
+
+    J --> M
+    K --> M
+    L --> M
+    M --> N --> O --> P --> Q
+    Q -->|yes| G
+    Q -->|no| R
+
+    R --> S --> T --> U
+
+    classDef default fill:#1A1B1E,stroke:#8B7AD8,color:#D6D6DE,stroke-width:1.5px;

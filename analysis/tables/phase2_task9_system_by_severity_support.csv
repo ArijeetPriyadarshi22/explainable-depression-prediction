@@ -1,0 +1,7 @@
+system,severity,n_trials,n_participants
+mentallama,no depression,17,12
+mentallama,moderate,20,12
+mentallama,severe,17,10
+agentic_xai,no depression,20,14
+agentic_xai,moderate,14,9
+agentic_xai,severe,19,10

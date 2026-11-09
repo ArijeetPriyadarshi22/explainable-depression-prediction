@@ -1,0 +1,5 @@
+condition,dimension,n_trials,n_participants,mean,sd,median,iqr,ci95_low,ci95_high
+COUNTERFACTUAL,Overall explanation quality,66,14,3.614,1.056,4.0,1.5,3.359,3.868
+HYBRID,Overall explanation quality,63,16,3.782,1.025,4.0,1.25,3.529,4.035
+RAG,Overall explanation quality,64,15,3.828,1.066,4.0,1.062,3.567,4.089
+SHAP,Overall explanation quality,70,15,3.675,0.994,4.0,0.938,3.442,3.908

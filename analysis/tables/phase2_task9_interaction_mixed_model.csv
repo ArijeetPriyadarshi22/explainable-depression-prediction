@@ -1,0 +1,5 @@
+dimension,method,model_comparison,n_trials,n_participants,lr_chi2,df,p_value,converged,interpretation_note
+Helpfulness,Exploratory mixed-model interaction likelihood-ratio test,system + severity vs system * severity,107,14,5.2859,2,0.07115,True,Secondary/exploratory; do not overstate subgroup findings.
+Correctness,Exploratory mixed-model interaction likelihood-ratio test,system + severity vs system * severity,107,14,6.3411,2,0.04198,True,Secondary/exploratory; do not overstate subgroup findings.
+Clarity,Exploratory mixed-model interaction likelihood-ratio test,system + severity vs system * severity,107,14,10.1018,2,0.006404,True,Secondary/exploratory; do not overstate subgroup findings.
+Trust,Exploratory mixed-model interaction likelihood-ratio test,system + severity vs system * severity,107,14,16.9938,2,0.000204,True,Secondary/exploratory; do not overstate subgroup findings.

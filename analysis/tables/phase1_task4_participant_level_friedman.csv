@@ -1,0 +1,5 @@
+dimension,method,n_participants,df,chi2,p_value,effect_size_metric,effect_size,interpretation_note
+Clarity,Friedman repeated-measures test on participant-level means,13,3,5.0168,0.170571,Kendall's W,0.1286,Secondary complete-case robustness check; primary inference remains the trial-level mixed model.
+Correctness,Friedman repeated-measures test on participant-level means,13,3,11.5952,0.008906,Kendall's W,0.2973,Secondary complete-case robustness check; primary inference remains the trial-level mixed model.
+Helpfulness,Friedman repeated-measures test on participant-level means,13,3,3.1667,0.366635,Kendall's W,0.0812,Secondary complete-case robustness check; primary inference remains the trial-level mixed model.
+Trust,Friedman repeated-measures test on participant-level means,13,3,4.5984,0.203683,Kendall's W,0.1179,Secondary complete-case robustness check; primary inference remains the trial-level mixed model.

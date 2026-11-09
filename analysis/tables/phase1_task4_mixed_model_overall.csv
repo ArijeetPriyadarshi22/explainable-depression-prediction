@@ -1,0 +1,5 @@
+dimension,method,model,n_trials,n_participants,lr_chi2,df,p_value,residual_sd,participant_intercept_variance,converged,pairwise_rule
+Clarity,"Linear mixed-effects model, likelihood-ratio test",rating ~ explanation_type + (1 | participant),263,16,7.9065,3,0.047985,0.6913,0.9815,True,Pairwise comparisons run only if overall p < 0.05
+Correctness,"Linear mixed-effects model, likelihood-ratio test",rating ~ explanation_type + (1 | participant),263,16,7.5972,3,0.055113,0.8536,0.5737,True,Pairwise comparisons run only if overall p < 0.05
+Helpfulness,"Linear mixed-effects model, likelihood-ratio test",rating ~ explanation_type + (1 | participant),263,16,1.1022,3,0.77655,0.7785,0.6682,True,Pairwise comparisons run only if overall p < 0.05
+Trust,"Linear mixed-effects model, likelihood-ratio test",rating ~ explanation_type + (1 | participant),263,16,4.3758,3,0.223644,0.8448,0.6269,True,Pairwise comparisons run only if overall p < 0.05

@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-08-10T21:25:29.700781+00:00",
+  "question_catalog": {
+    "shap": "Which text parts mattered most?",
+    "counterfactual": "What could change the prediction?",
+    "rag": "Which symptoms mattered?",
+    "hybrid": "What evidence supports it?"
+  },
+  "records": [
+    {
+      "id": "daic_woz_severe_321",
+      "text": "                                    Lately, I’ve been feeling deeply depressed and weighed down by worries. My life feels heavy; I had to settle for a retail job because I couldn't find work in my field, and my daughter is currently battling cancer, leaving me frustrated and anxious. I haven't had a good night's sleep in a year, waking up every few hours. This severe fatigue leaves me groggy, lacking energy, and struggling to concentrate, causing me to forget things and make mistakes at work. I’ve experienced a painful shift in my social functioning and interests; I haven't gone out to dinner with a close friend in over a year. My self-worth is low—I don't know my best qualities and regret my lack of education— and my appetite is disrupted.Though I find moments of pure joy playing with my granddaughter, I mostly feel trapped by sadness and failure, coping by keeping quiet when struggling.\n        \n        \n        \n        ",
+      "severity": "severe",
+      "prediction": {
+        "label": "severe",
+        "confidence": 0.709019487708329
+      },
+      "responses": [
+        {
+          "question": "Which text parts mattered most?",
+          "agentic_xai": {
+            "status": "success",
+            "response": "The model predicts a severe level of depression for the person in the passage. This result is driven by indicators of prolonged emotional and physical distress. The model identifies phrases such as **\"sadness\"** and feeling **\"trapped\"** as evidence of persistent low mood. The mention of keeping **\"quiet\"** when struggling suggests a withdrawal from external support, while the context of the **\"daughter\"** dealing with a serious illness and the duration of these challenges lasting over a **\"year\"** point to a long-term, overwhelming burden. These factors together signal a high intensity of distress.\n\nThe assessment also notes that the person finds moments of happiness, specifically by **\"playing with my granddaughter.\"** This activity acts as a protective signal, indicating that the person is still able to experience and connect with sources of joy despite the overall severity of the feelings described in the text.",
+            "generated_at": "2026-08-10T21:26:18.426086+00:00",
+            "selected_tool": "shap"
+          },
+          "mentallama": {
+            "status": "missing",
+            "response": null
+          }
+        },
+        {
+          "question": "Which symptoms mattered?",
+          "agentic_xai": {
+            "status": "success",
+            "response": "The assessment indicates a severe level of depression based on the provided text. This result is linked to three primary themes identified in the person's experiences. First, they describe a persistent sense of **feeling deeply depressed and weighed down by worries**, noting that their **life feels heavy** and they feel **trapped by sadness**. This reflects a core state of ongoing low mood.\n\nSecond, the passage highlights significant fatigue, noting that the person is **lacking energy** and remains **groggy** due to a lack of sleep, which makes it hard to manage daily tasks. Finally, the person expresses a clear sense of low self-worth. They describe themselves as a **failure** and carry **regret** regarding their education, explaining that they **don’t know their best qualities**. Together, these patterns of deep sadness, constant exhaustion, and negative self-view form the basis for the severe prediction.",
+            "generated_at": "2026-08-10T21:27:09.578681+00:00",
+            "selected_tool": "rag"
+          },
+          "mentallama": {
+            "status": "missing",
+            "response": null
+          }
+        },
+        {
+          "question": "What could change the prediction?",
+          "agentic_xai": {
+            "status": "success",
+            "response": "The AI evaluates this passage as indicating a level of depression that is severe. The assessment is heavily influenced by the feelings of being **trapped by sadness** and the tendency of the person to be **keeping quiet when struggling**. These phrases carry significant weight because they reflect a sense of profound emotional confinement and a lack of external connection while facing difficult circumstances, such as when the **daughter is currently battling cancer**. \n\nTo see if the assessment could shift to a moderate level, the text was rewritten to describe more manageable feelings, improved sleep, more consistent energy, and a greater sense of hope and social engagement. However, these edits were not enough to change the severe classification.",
+            "generated_at": "2026-08-10T21:28:01.924198+00:00",
+            "selected_tool": "counterfactual"
+          },
+          "mentallama": {
+            "status": "missing",
+            "response": null
+          }
+        },
+        {
+          "question": "What evidence supports it?",
+          "agentic_xai": {
+            "status": "success",
+            "response": "The AI identifies the depression screening level in the passage as severe. This result is driven by phrases indicating deep emotional distress, such as **I mostly feel trapped by sadness and failure, coping by keeping quiet when struggling**, and the mention of being **weighed down by worries** due to the situation where the **daughter is currently battling cancer, leaving me frustrated and anxious**. These details correspond directly to symptom themes of depressed mood, where everything feels hopeless, and persistent fatigue, highlighted by the fact that the person **hasn't had a good night's sleep in a year, waking up every few hours**.\n\nThe passage also reflects a struggle with low self-worth and a loss of energy, as the person describes being unable to concentrate and making mistakes. A test was conducted to see if the prediction would change by softening the language regarding daily challenges, social functioning, and the ability to cope by talking things through rather than staying quiet. Even with these adjustments, the model prediction remained severe. The original, heavy indicators of distress remained too strong for the classification to shift.",
+            "generated_at": "2026-08-10T21:28:59.519035+00:00",
+            "selected_tool": "hybrid"
+          },
+          "mentallama": {
+            "status": "missing",
+            "response": null
+          }
+        }
+      ]
+    }
+  ]
+}

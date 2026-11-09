@@ -1,0 +1,43 @@
+%% Current hybrid explanation generation in the MCP path.
+flowchart TB
+    A[Fixed hybrid question<br/>or overall adaptive request]:::interface
+    B[MCP client]:::controller
+    C[Call predict_depression]:::tool
+    D[Prediction context]:::data
+
+    B --> C --> D --> B
+
+    subgraph MCP[MCP tool execution]
+        S[explain_shap]:::tool
+        R[explain_rag]:::tool
+        F[explain_counterfactual]:::tool
+    end
+
+    B --> S
+    B --> R
+    B --> F
+
+    S --> SR[SHAPResult<br/>risk and protective tokens]:::data
+    R --> RR[RAGResult<br/>top-k retrieved themes]:::data
+    F --> FR[CounterfactualResult<br/>candidate edits and best_cf]:::data
+
+    SR --> X[Raw result set<br/>deserialized in client]:::controller
+    RR --> X
+    FR --> X
+    D --> X
+    X --> H[Build HybridResult<br/>_build_hybrid_result]:::controller
+    H --> G[generate_hybrid_explanation]:::generator
+    G --> L[Gemini final synthesis prompt]:::llm
+    L --> O[Comprehensive explanation]:::output
+
+    N[No separate hybrid<br/>MCP server or tool]:::note
+    N -. current boundary .-> B
+
+    classDef interface fill:#F8FAFC,stroke:#334155,color:#111827,rx:8,ry:8;
+    classDef controller fill:#E0F2FE,stroke:#0369A1,color:#0F172A,rx:8,ry:8;
+    classDef tool fill:#ECFDF5,stroke:#047857,color:#0F172A,rx:8,ry:8;
+    classDef data fill:#F1F5F9,stroke:#475569,color:#0F172A,rx:8,ry:8;
+    classDef generator fill:#FFF7ED,stroke:#C2410C,color:#0F172A,rx:8,ry:8;
+    classDef llm fill:#FEF3C7,stroke:#B45309,color:#0F172A,rx:8,ry:8;
+    classDef output fill:#F8FAFC,stroke:#0F766E,color:#0F172A,rx:8,ry:8;
+    classDef note fill:#FFFFFF,stroke:#94A3B8,color:#475569,stroke-dasharray: 4 3,rx:8,ry:8;

@@ -1,0 +1,88 @@
+%% Overall system architecture for the Telegram-based Agentic XAI study system.
+%% The diagram shows the important runtime components without expanding every internal call.
+flowchart LR
+    subgraph UI[User Interface: Telegram Study Bot]
+        U[Participant]:::actor
+        B[Telegram bot<br/>bot.py]:::interface
+        P[Passage presentation<br/>text sample + model prediction]:::interface
+        Q[Question selection<br/>SHAP, RAG, counterfactual, hybrid]:::interface
+        E[Explanation display]:::output
+        R[Explanation rating<br/>answered, supported, understandable, confidence]:::output
+        LOG[Study log<br/>within_participant_experiment_records.csv]:::data
+        STORE[Saved study responses<br/>data/study_responses.json]:::data
+    end
+
+    subgraph CLIENT[MCP Client and Agent Layer]
+        REQ[Explanation request<br/>passage + selected question]:::controller
+        MC[MCP client<br/>starts server, discovers tools, calls tools]:::controller
+        PROMPT[Question and controller prompt<br/>build_react_decision_prompt]:::prompt
+        REACT[ReAct tool selector<br/>choose SHAP, RAG, counterfactual, or finish]:::controller
+        OBS[Evidence collection<br/>prediction + observations + raw results]:::controller
+        ROUTER[Final response router<br/>choose SHAP, RAG, counterfactual, or hybrid generator]:::generator
+        GEN[Final response generators<br/>method-specific prompts + Gemini wording]:::generator
+    end
+
+    subgraph SERVER[MCP Server and Explanation Tools]
+        MS[MCP stdio server<br/>mcp_server.py]:::server
+        PD[predict_depression<br/>takes: passage text<br/>returns: label, confidence, severity score]:::tool
+        SHAP[explain_shap<br/>takes: passage text<br/>returns: word/token contribution evidence]:::tool
+        RAG[explain_rag<br/>takes: passage text<br/>returns: retrieved PHQ-8 symptom evidence]:::tool
+        CF[explain_counterfactual<br/>takes: passage text<br/>returns: candidate rewrites + best counterfactual]:::tool
+    end
+
+    subgraph RESOURCES[Shared Models, Knowledge, and LLM Services]
+        MODEL[Depression prediction model<br/>TF-IDF classifier + cached model]:::data
+        KB[PHQ-8 knowledge base<br/>CSV + sentence embeddings + FAISS]:::data
+        LLM[Gemini LLM<br/>controller decisions, prompts, final wording, CF candidates]:::llm
+    end
+
+    U --> B
+    B --> P
+    P --> Q
+    Q --> REQ
+
+    REQ --> MC
+    MC --> PROMPT
+    PROMPT --> REACT
+    REACT --> MC
+    MC --> MS
+
+    MS --> PD
+    MS --> SHAP
+    MS --> RAG
+    MS --> CF
+
+    PD --> MODEL
+    SHAP --> MODEL
+    RAG --> MODEL
+    RAG --> KB
+    CF --> MODEL
+    CF --> LLM
+
+    PD --> OBS
+    SHAP --> OBS
+    RAG --> OBS
+    CF --> OBS
+
+    OBS --> REACT
+    OBS --> ROUTER
+    ROUTER --> GEN
+    GEN --> LLM
+    GEN --> E
+
+    STORE -. saved study mode .-> B
+    REQ -. offline generation / cache fill .-> STORE
+    E --> B
+    B --> R
+    R --> LOG
+
+    classDef actor fill:#FFFFFF,stroke:#111827,color:#111827,rx:8,ry:8;
+    classDef interface fill:#F8FAFC,stroke:#334155,color:#111827,rx:8,ry:8;
+    classDef controller fill:#E0F2FE,stroke:#0369A1,color:#0F172A,rx:8,ry:8;
+    classDef server fill:#DBEAFE,stroke:#1D4ED8,color:#0F172A,rx:8,ry:8;
+    classDef tool fill:#ECFDF5,stroke:#047857,color:#0F172A,rx:8,ry:8;
+    classDef prompt fill:#F5F3FF,stroke:#7C3AED,color:#111827,rx:8,ry:8;
+    classDef generator fill:#FFF7ED,stroke:#C2410C,color:#0F172A,rx:8,ry:8;
+    classDef llm fill:#FEF3C7,stroke:#B45309,color:#0F172A,rx:8,ry:8;
+    classDef data fill:#F1F5F9,stroke:#475569,color:#0F172A,rx:8,ry:8;
+    classDef output fill:#F0FDFA,stroke:#0F766E,color:#0F172A,rx:8,ry:8;

@@ -1,0 +1,311 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1108" height="916" viewBox="0 0 1108 916">
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#202020}.title{font-size:18px;font-weight:700}.label{font-size:13px;font-weight:700}.small{font-size:11px}.tick{font-size:10px}.axis{stroke:#333;stroke-width:1}.grid{stroke:#dedede;stroke-width:1}
+</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="18" y="28" class="title">Phase 1 Rating Distributions by Explanation Type</text>
+<text x="50" y="34" class="small">Clarity - COUNTERFACTUAL</text>
+<line x1="64" y1="196" x2="274" y2="196" class="axis"/>
+<line x1="64" y1="64" x2="64" y2="196" class="axis"/>
+<rect x="72" y="166.00" width="26" height="30.00" fill="#2f6f73" opacity="0.82"/>
+<text x="85" y="214" class="tick" text-anchor="middle">1</text>
+<text x="85" y="161.00" class="tick" text-anchor="middle">7</text>
+<rect x="111" y="170.29" width="26" height="25.71" fill="#2f6f73" opacity="0.82"/>
+<text x="124" y="214" class="tick" text-anchor="middle">2</text>
+<text x="124" y="165.29" class="tick" text-anchor="middle">6</text>
+<rect x="150" y="170.29" width="26" height="25.71" fill="#2f6f73" opacity="0.82"/>
+<text x="163" y="214" class="tick" text-anchor="middle">3</text>
+<text x="163" y="165.29" class="tick" text-anchor="middle">6</text>
+<rect x="189" y="76.00" width="26" height="120.00" fill="#2f6f73" opacity="0.82"/>
+<text x="202" y="214" class="tick" text-anchor="middle">4</text>
+<text x="202" y="71.00" class="tick" text-anchor="middle">28</text>
+<rect x="228" y="114.57" width="26" height="81.43" fill="#2f6f73" opacity="0.82"/>
+<text x="241" y="214" class="tick" text-anchor="middle">5</text>
+<text x="241" y="109.57" class="tick" text-anchor="middle">19</text>
+<text x="169" y="236" class="tick" text-anchor="middle">rating</text>
+<text x="310" y="34" class="small">Clarity - HYBRID</text>
+<line x1="324" y1="196" x2="534" y2="196" class="axis"/>
+<line x1="324" y1="64" x2="324" y2="196" class="axis"/>
+<rect x="332" y="177.54" width="26" height="18.46" fill="#9b4d3d" opacity="0.82"/>
+<text x="345" y="214" class="tick" text-anchor="middle">1</text>
+<text x="345" y="172.54" class="tick" text-anchor="middle">4</text>
+<rect x="371" y="163.69" width="26" height="32.31" fill="#9b4d3d" opacity="0.82"/>
+<text x="384" y="214" class="tick" text-anchor="middle">2</text>
+<text x="384" y="158.69" class="tick" text-anchor="middle">7</text>
+<rect x="410" y="168.31" width="26" height="27.69" fill="#9b4d3d" opacity="0.82"/>
+<text x="423" y="214" class="tick" text-anchor="middle">3</text>
+<text x="423" y="163.31" class="tick" text-anchor="middle">6</text>
+<rect x="449" y="103.69" width="26" height="92.31" fill="#9b4d3d" opacity="0.82"/>
+<text x="462" y="214" class="tick" text-anchor="middle">4</text>
+<text x="462" y="98.69" class="tick" text-anchor="middle">20</text>
+<rect x="488" y="76.00" width="26" height="120.00" fill="#9b4d3d" opacity="0.82"/>
+<text x="501" y="214" class="tick" text-anchor="middle">5</text>
+<text x="501" y="71.00" class="tick" text-anchor="middle">26</text>
+<text x="429" y="236" class="tick" text-anchor="middle">rating</text>
+<text x="570" y="34" class="small">Clarity - RAG</text>
+<line x1="584" y1="196" x2="794" y2="196" class="axis"/>
+<line x1="584" y1="64" x2="584" y2="196" class="axis"/>
+<rect x="592" y="176.65" width="26" height="19.35" fill="#5c6f99" opacity="0.82"/>
+<text x="605" y="214" class="tick" text-anchor="middle">1</text>
+<text x="605" y="171.65" class="tick" text-anchor="middle">5</text>
+<rect x="631" y="188.26" width="26" height="7.74" fill="#5c6f99" opacity="0.82"/>
+<text x="644" y="214" class="tick" text-anchor="middle">2</text>
+<text x="644" y="183.26" class="tick" text-anchor="middle">2</text>
+<rect x="670" y="176.65" width="26" height="19.35" fill="#5c6f99" opacity="0.82"/>
+<text x="683" y="214" class="tick" text-anchor="middle">3</text>
+<text x="683" y="171.65" class="tick" text-anchor="middle">5</text>
+<rect x="709" y="114.71" width="26" height="81.29" fill="#5c6f99" opacity="0.82"/>
+<text x="722" y="214" class="tick" text-anchor="middle">4</text>
+<text x="722" y="109.71" class="tick" text-anchor="middle">21</text>
+<rect x="748" y="76.00" width="26" height="120.00" fill="#5c6f99" opacity="0.82"/>
+<text x="761" y="214" class="tick" text-anchor="middle">5</text>
+<text x="761" y="71.00" class="tick" text-anchor="middle">31</text>
+<text x="689" y="236" class="tick" text-anchor="middle">rating</text>
+<text x="830" y="34" class="small">Clarity - SHAP</text>
+<line x1="844" y1="196" x2="1054" y2="196" class="axis"/>
+<line x1="844" y1="64" x2="844" y2="196" class="axis"/>
+<rect x="852" y="164.89" width="26" height="31.11" fill="#7a6a2f" opacity="0.82"/>
+<text x="865" y="214" class="tick" text-anchor="middle">1</text>
+<text x="865" y="159.89" class="tick" text-anchor="middle">7</text>
+<rect x="891" y="173.78" width="26" height="22.22" fill="#7a6a2f" opacity="0.82"/>
+<text x="904" y="214" class="tick" text-anchor="middle">2</text>
+<text x="904" y="168.78" class="tick" text-anchor="middle">5</text>
+<rect x="930" y="160.44" width="26" height="35.56" fill="#7a6a2f" opacity="0.82"/>
+<text x="943" y="214" class="tick" text-anchor="middle">3</text>
+<text x="943" y="155.44" class="tick" text-anchor="middle">8</text>
+<rect x="969" y="76.00" width="26" height="120.00" fill="#7a6a2f" opacity="0.82"/>
+<text x="982" y="214" class="tick" text-anchor="middle">4</text>
+<text x="982" y="71.00" class="tick" text-anchor="middle">27</text>
+<rect x="1008" y="93.78" width="26" height="102.22" fill="#7a6a2f" opacity="0.82"/>
+<text x="1021" y="214" class="tick" text-anchor="middle">5</text>
+<text x="1021" y="88.78" class="tick" text-anchor="middle">23</text>
+<text x="949" y="236" class="tick" text-anchor="middle">rating</text>
+<text x="50" y="244" class="small">Correctness - COUNTERFACTUAL</text>
+<line x1="64" y1="406" x2="274" y2="406" class="axis"/>
+<line x1="64" y1="274" x2="64" y2="406" class="axis"/>
+<rect x="72" y="388.22" width="26" height="17.78" fill="#2f6f73" opacity="0.82"/>
+<text x="85" y="424" class="tick" text-anchor="middle">1</text>
+<text x="85" y="383.22" class="tick" text-anchor="middle">4</text>
+<rect x="111" y="374.89" width="26" height="31.11" fill="#2f6f73" opacity="0.82"/>
+<text x="124" y="424" class="tick" text-anchor="middle">2</text>
+<text x="124" y="369.89" class="tick" text-anchor="middle">7</text>
+<rect x="150" y="339.33" width="26" height="66.67" fill="#2f6f73" opacity="0.82"/>
+<text x="163" y="424" class="tick" text-anchor="middle">3</text>
+<text x="163" y="334.33" class="tick" text-anchor="middle">15</text>
+<rect x="189" y="286.00" width="26" height="120.00" fill="#2f6f73" opacity="0.82"/>
+<text x="202" y="424" class="tick" text-anchor="middle">4</text>
+<text x="202" y="281.00" class="tick" text-anchor="middle">27</text>
+<rect x="228" y="348.22" width="26" height="57.78" fill="#2f6f73" opacity="0.82"/>
+<text x="241" y="424" class="tick" text-anchor="middle">5</text>
+<text x="241" y="343.22" class="tick" text-anchor="middle">13</text>
+<text x="169" y="446" class="tick" text-anchor="middle">rating</text>
+<text x="310" y="244" class="small">Correctness - HYBRID</text>
+<line x1="324" y1="406" x2="534" y2="406" class="axis"/>
+<line x1="324" y1="274" x2="324" y2="406" class="axis"/>
+<rect x="332" y="390.35" width="26" height="15.65" fill="#9b4d3d" opacity="0.82"/>
+<text x="345" y="424" class="tick" text-anchor="middle">1</text>
+<text x="345" y="385.35" class="tick" text-anchor="middle">3</text>
+<rect x="371" y="385.13" width="26" height="20.87" fill="#9b4d3d" opacity="0.82"/>
+<text x="384" y="424" class="tick" text-anchor="middle">2</text>
+<text x="384" y="380.13" class="tick" text-anchor="middle">4</text>
+<rect x="410" y="338.17" width="26" height="67.83" fill="#9b4d3d" opacity="0.82"/>
+<text x="423" y="424" class="tick" text-anchor="middle">3</text>
+<text x="423" y="333.17" class="tick" text-anchor="middle">13</text>
+<rect x="449" y="301.65" width="26" height="104.35" fill="#9b4d3d" opacity="0.82"/>
+<text x="462" y="424" class="tick" text-anchor="middle">4</text>
+<text x="462" y="296.65" class="tick" text-anchor="middle">20</text>
+<rect x="488" y="286.00" width="26" height="120.00" fill="#9b4d3d" opacity="0.82"/>
+<text x="501" y="424" class="tick" text-anchor="middle">5</text>
+<text x="501" y="281.00" class="tick" text-anchor="middle">23</text>
+<text x="429" y="446" class="tick" text-anchor="middle">rating</text>
+<text x="570" y="244" class="small">Correctness - RAG</text>
+<line x1="584" y1="406" x2="794" y2="406" class="axis"/>
+<line x1="584" y1="274" x2="584" y2="406" class="axis"/>
+<rect x="592" y="386.80" width="26" height="19.20" fill="#5c6f99" opacity="0.82"/>
+<text x="605" y="424" class="tick" text-anchor="middle">1</text>
+<text x="605" y="381.80" class="tick" text-anchor="middle">4</text>
+<rect x="631" y="372.40" width="26" height="33.60" fill="#5c6f99" opacity="0.82"/>
+<text x="644" y="424" class="tick" text-anchor="middle">2</text>
+<text x="644" y="367.40" class="tick" text-anchor="middle">7</text>
+<rect x="670" y="372.40" width="26" height="33.60" fill="#5c6f99" opacity="0.82"/>
+<text x="683" y="424" class="tick" text-anchor="middle">3</text>
+<text x="683" y="367.40" class="tick" text-anchor="middle">7</text>
+<rect x="709" y="305.20" width="26" height="100.80" fill="#5c6f99" opacity="0.82"/>
+<text x="722" y="424" class="tick" text-anchor="middle">4</text>
+<text x="722" y="300.20" class="tick" text-anchor="middle">21</text>
+<rect x="748" y="286.00" width="26" height="120.00" fill="#5c6f99" opacity="0.82"/>
+<text x="761" y="424" class="tick" text-anchor="middle">5</text>
+<text x="761" y="281.00" class="tick" text-anchor="middle">25</text>
+<text x="689" y="446" class="tick" text-anchor="middle">rating</text>
+<text x="830" y="244" class="small">Correctness - SHAP</text>
+<line x1="844" y1="406" x2="1054" y2="406" class="axis"/>
+<line x1="844" y1="274" x2="844" y2="406" class="axis"/>
+<rect x="852" y="382.77" width="26" height="23.23" fill="#7a6a2f" opacity="0.82"/>
+<text x="865" y="424" class="tick" text-anchor="middle">1</text>
+<text x="865" y="377.77" class="tick" text-anchor="middle">6</text>
+<rect x="891" y="390.52" width="26" height="15.48" fill="#7a6a2f" opacity="0.82"/>
+<text x="904" y="424" class="tick" text-anchor="middle">2</text>
+<text x="904" y="385.52" class="tick" text-anchor="middle">4</text>
+<rect x="930" y="355.68" width="26" height="50.32" fill="#7a6a2f" opacity="0.82"/>
+<text x="943" y="424" class="tick" text-anchor="middle">3</text>
+<text x="943" y="350.68" class="tick" text-anchor="middle">13</text>
+<rect x="969" y="286.00" width="26" height="120.00" fill="#7a6a2f" opacity="0.82"/>
+<text x="982" y="424" class="tick" text-anchor="middle">4</text>
+<text x="982" y="281.00" class="tick" text-anchor="middle">31</text>
+<rect x="1008" y="344.06" width="26" height="61.94" fill="#7a6a2f" opacity="0.82"/>
+<text x="1021" y="424" class="tick" text-anchor="middle">5</text>
+<text x="1021" y="339.06" class="tick" text-anchor="middle">16</text>
+<text x="949" y="446" class="tick" text-anchor="middle">rating</text>
+<text x="50" y="454" class="small">Helpfulness - COUNTERFACTUAL</text>
+<line x1="64" y1="616" x2="274" y2="616" class="axis"/>
+<line x1="64" y1="484" x2="64" y2="616" class="axis"/>
+<rect x="72" y="598.86" width="26" height="17.14" fill="#2f6f73" opacity="0.82"/>
+<text x="85" y="634" class="tick" text-anchor="middle">1</text>
+<text x="85" y="593.86" class="tick" text-anchor="middle">3</text>
+<rect x="111" y="570.29" width="26" height="45.71" fill="#2f6f73" opacity="0.82"/>
+<text x="124" y="634" class="tick" text-anchor="middle">2</text>
+<text x="124" y="565.29" class="tick" text-anchor="middle">8</text>
+<rect x="150" y="530.29" width="26" height="85.71" fill="#2f6f73" opacity="0.82"/>
+<text x="163" y="634" class="tick" text-anchor="middle">3</text>
+<text x="163" y="525.29" class="tick" text-anchor="middle">15</text>
+<rect x="189" y="496.00" width="26" height="120.00" fill="#2f6f73" opacity="0.82"/>
+<text x="202" y="634" class="tick" text-anchor="middle">4</text>
+<text x="202" y="491.00" class="tick" text-anchor="middle">21</text>
+<rect x="228" y="507.43" width="26" height="108.57" fill="#2f6f73" opacity="0.82"/>
+<text x="241" y="634" class="tick" text-anchor="middle">5</text>
+<text x="241" y="502.43" class="tick" text-anchor="middle">19</text>
+<text x="169" y="656" class="tick" text-anchor="middle">rating</text>
+<text x="310" y="454" class="small">Helpfulness - HYBRID</text>
+<line x1="324" y1="616" x2="534" y2="616" class="axis"/>
+<line x1="324" y1="484" x2="324" y2="616" class="axis"/>
+<rect x="332" y="601.00" width="26" height="15.00" fill="#9b4d3d" opacity="0.82"/>
+<text x="345" y="634" class="tick" text-anchor="middle">1</text>
+<text x="345" y="596.00" class="tick" text-anchor="middle">3</text>
+<rect x="371" y="571.00" width="26" height="45.00" fill="#9b4d3d" opacity="0.82"/>
+<text x="384" y="634" class="tick" text-anchor="middle">2</text>
+<text x="384" y="566.00" class="tick" text-anchor="middle">9</text>
+<rect x="410" y="566.00" width="26" height="50.00" fill="#9b4d3d" opacity="0.82"/>
+<text x="423" y="634" class="tick" text-anchor="middle">3</text>
+<text x="423" y="561.00" class="tick" text-anchor="middle">10</text>
+<rect x="449" y="496.00" width="26" height="120.00" fill="#9b4d3d" opacity="0.82"/>
+<text x="462" y="634" class="tick" text-anchor="middle">4</text>
+<text x="462" y="491.00" class="tick" text-anchor="middle">24</text>
+<rect x="488" y="531.00" width="26" height="85.00" fill="#9b4d3d" opacity="0.82"/>
+<text x="501" y="634" class="tick" text-anchor="middle">5</text>
+<text x="501" y="526.00" class="tick" text-anchor="middle">17</text>
+<text x="429" y="656" class="tick" text-anchor="middle">rating</text>
+<text x="570" y="454" class="small">Helpfulness - RAG</text>
+<line x1="584" y1="616" x2="794" y2="616" class="axis"/>
+<line x1="584" y1="484" x2="584" y2="616" class="axis"/>
+<rect x="592" y="589.33" width="26" height="26.67" fill="#5c6f99" opacity="0.82"/>
+<text x="605" y="634" class="tick" text-anchor="middle">1</text>
+<text x="605" y="584.33" class="tick" text-anchor="middle">6</text>
+<rect x="631" y="593.78" width="26" height="22.22" fill="#5c6f99" opacity="0.82"/>
+<text x="644" y="634" class="tick" text-anchor="middle">2</text>
+<text x="644" y="588.78" class="tick" text-anchor="middle">5</text>
+<rect x="670" y="571.56" width="26" height="44.44" fill="#5c6f99" opacity="0.82"/>
+<text x="683" y="634" class="tick" text-anchor="middle">3</text>
+<text x="683" y="566.56" class="tick" text-anchor="middle">10</text>
+<rect x="709" y="496.00" width="26" height="120.00" fill="#5c6f99" opacity="0.82"/>
+<text x="722" y="634" class="tick" text-anchor="middle">4</text>
+<text x="722" y="491.00" class="tick" text-anchor="middle">27</text>
+<rect x="748" y="544.89" width="26" height="71.11" fill="#5c6f99" opacity="0.82"/>
+<text x="761" y="634" class="tick" text-anchor="middle">5</text>
+<text x="761" y="539.89" class="tick" text-anchor="middle">16</text>
+<text x="689" y="656" class="tick" text-anchor="middle">rating</text>
+<text x="830" y="454" class="small">Helpfulness - SHAP</text>
+<line x1="844" y1="616" x2="1054" y2="616" class="axis"/>
+<line x1="844" y1="484" x2="844" y2="616" class="axis"/>
+<rect x="852" y="596.00" width="26" height="20.00" fill="#7a6a2f" opacity="0.82"/>
+<text x="865" y="634" class="tick" text-anchor="middle">1</text>
+<text x="865" y="591.00" class="tick" text-anchor="middle">5</text>
+<rect x="891" y="604.00" width="26" height="12.00" fill="#7a6a2f" opacity="0.82"/>
+<text x="904" y="634" class="tick" text-anchor="middle">2</text>
+<text x="904" y="599.00" class="tick" text-anchor="middle">3</text>
+<rect x="930" y="540.00" width="26" height="76.00" fill="#7a6a2f" opacity="0.82"/>
+<text x="943" y="634" class="tick" text-anchor="middle">3</text>
+<text x="943" y="535.00" class="tick" text-anchor="middle">19</text>
+<rect x="969" y="496.00" width="26" height="120.00" fill="#7a6a2f" opacity="0.82"/>
+<text x="982" y="634" class="tick" text-anchor="middle">4</text>
+<text x="982" y="491.00" class="tick" text-anchor="middle">30</text>
+<rect x="1008" y="564.00" width="26" height="52.00" fill="#7a6a2f" opacity="0.82"/>
+<text x="1021" y="634" class="tick" text-anchor="middle">5</text>
+<text x="1021" y="559.00" class="tick" text-anchor="middle">13</text>
+<text x="949" y="656" class="tick" text-anchor="middle">rating</text>
+<text x="50" y="664" class="small">Trust - COUNTERFACTUAL</text>
+<line x1="64" y1="826" x2="274" y2="826" class="axis"/>
+<line x1="64" y1="694" x2="64" y2="826" class="axis"/>
+<rect x="72" y="806.80" width="26" height="19.20" fill="#2f6f73" opacity="0.82"/>
+<text x="85" y="844" class="tick" text-anchor="middle">1</text>
+<text x="85" y="801.80" class="tick" text-anchor="middle">4</text>
+<rect x="111" y="778.00" width="26" height="48.00" fill="#2f6f73" opacity="0.82"/>
+<text x="124" y="844" class="tick" text-anchor="middle">2</text>
+<text x="124" y="773.00" class="tick" text-anchor="middle">10</text>
+<rect x="150" y="758.80" width="26" height="67.20" fill="#2f6f73" opacity="0.82"/>
+<text x="163" y="844" class="tick" text-anchor="middle">3</text>
+<text x="163" y="753.80" class="tick" text-anchor="middle">14</text>
+<rect x="189" y="706.00" width="26" height="120.00" fill="#2f6f73" opacity="0.82"/>
+<text x="202" y="844" class="tick" text-anchor="middle">4</text>
+<text x="202" y="701.00" class="tick" text-anchor="middle">25</text>
+<rect x="228" y="763.60" width="26" height="62.40" fill="#2f6f73" opacity="0.82"/>
+<text x="241" y="844" class="tick" text-anchor="middle">5</text>
+<text x="241" y="758.60" class="tick" text-anchor="middle">13</text>
+<text x="169" y="866" class="tick" text-anchor="middle">rating</text>
+<text x="310" y="664" class="small">Trust - HYBRID</text>
+<line x1="324" y1="826" x2="534" y2="826" class="axis"/>
+<line x1="324" y1="694" x2="324" y2="826" class="axis"/>
+<rect x="332" y="806.00" width="26" height="20.00" fill="#9b4d3d" opacity="0.82"/>
+<text x="345" y="844" class="tick" text-anchor="middle">1</text>
+<text x="345" y="801.00" class="tick" text-anchor="middle">4</text>
+<rect x="371" y="801.00" width="26" height="25.00" fill="#9b4d3d" opacity="0.82"/>
+<text x="384" y="844" class="tick" text-anchor="middle">2</text>
+<text x="384" y="796.00" class="tick" text-anchor="middle">5</text>
+<rect x="410" y="751.00" width="26" height="75.00" fill="#9b4d3d" opacity="0.82"/>
+<text x="423" y="844" class="tick" text-anchor="middle">3</text>
+<text x="423" y="746.00" class="tick" text-anchor="middle">15</text>
+<rect x="449" y="706.00" width="26" height="120.00" fill="#9b4d3d" opacity="0.82"/>
+<text x="462" y="844" class="tick" text-anchor="middle">4</text>
+<text x="462" y="701.00" class="tick" text-anchor="middle">24</text>
+<rect x="488" y="751.00" width="26" height="75.00" fill="#9b4d3d" opacity="0.82"/>
+<text x="501" y="844" class="tick" text-anchor="middle">5</text>
+<text x="501" y="746.00" class="tick" text-anchor="middle">15</text>
+<text x="429" y="866" class="tick" text-anchor="middle">rating</text>
+<text x="570" y="664" class="small">Trust - RAG</text>
+<line x1="584" y1="826" x2="794" y2="826" class="axis"/>
+<line x1="584" y1="694" x2="584" y2="826" class="axis"/>
+<rect x="592" y="796.00" width="26" height="30.00" fill="#5c6f99" opacity="0.82"/>
+<text x="605" y="844" class="tick" text-anchor="middle">1</text>
+<text x="605" y="791.00" class="tick" text-anchor="middle">6</text>
+<rect x="631" y="801.00" width="26" height="25.00" fill="#5c6f99" opacity="0.82"/>
+<text x="644" y="844" class="tick" text-anchor="middle">2</text>
+<text x="644" y="796.00" class="tick" text-anchor="middle">5</text>
+<rect x="670" y="771.00" width="26" height="55.00" fill="#5c6f99" opacity="0.82"/>
+<text x="683" y="844" class="tick" text-anchor="middle">3</text>
+<text x="683" y="766.00" class="tick" text-anchor="middle">11</text>
+<rect x="709" y="706.00" width="26" height="120.00" fill="#5c6f99" opacity="0.82"/>
+<text x="722" y="844" class="tick" text-anchor="middle">4</text>
+<text x="722" y="701.00" class="tick" text-anchor="middle">24</text>
+<rect x="748" y="736.00" width="26" height="90.00" fill="#5c6f99" opacity="0.82"/>
+<text x="761" y="844" class="tick" text-anchor="middle">5</text>
+<text x="761" y="731.00" class="tick" text-anchor="middle">18</text>
+<text x="689" y="866" class="tick" text-anchor="middle">rating</text>
+<text x="830" y="664" class="small">Trust - SHAP</text>
+<line x1="844" y1="826" x2="1054" y2="826" class="axis"/>
+<line x1="844" y1="694" x2="844" y2="826" class="axis"/>
+<rect x="852" y="810.00" width="26" height="16.00" fill="#7a6a2f" opacity="0.82"/>
+<text x="865" y="844" class="tick" text-anchor="middle">1</text>
+<text x="865" y="805.00" class="tick" text-anchor="middle">4</text>
+<rect x="891" y="806.00" width="26" height="20.00" fill="#7a6a2f" opacity="0.82"/>
+<text x="904" y="844" class="tick" text-anchor="middle">2</text>
+<text x="904" y="801.00" class="tick" text-anchor="middle">5</text>
+<rect x="930" y="758.00" width="26" height="68.00" fill="#7a6a2f" opacity="0.82"/>
+<text x="943" y="844" class="tick" text-anchor="middle">3</text>
+<text x="943" y="753.00" class="tick" text-anchor="middle">17</text>
+<rect x="969" y="706.00" width="26" height="120.00" fill="#7a6a2f" opacity="0.82"/>
+<text x="982" y="844" class="tick" text-anchor="middle">4</text>
+<text x="982" y="701.00" class="tick" text-anchor="middle">30</text>
+<rect x="1008" y="770.00" width="26" height="56.00" fill="#7a6a2f" opacity="0.82"/>
+<text x="1021" y="844" class="tick" text-anchor="middle">5</text>
+<text x="1021" y="765.00" class="tick" text-anchor="middle">14</text>
+<text x="949" y="866" class="tick" text-anchor="middle">rating</text>
+</svg>

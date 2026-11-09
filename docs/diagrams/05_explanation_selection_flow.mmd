@@ -1,0 +1,32 @@
+%% Mapping from explanation question type to implemented explanation strategy.
+flowchart TB
+    A[Explanation question]:::interface
+    B{Question intent<br/>or fixed study type}:::decision
+    C[Feature influence<br/>which text parts mattered?]:::interface
+    D[Prediction change<br/>what could change it?]:::interface
+    E[Symptoms and behaviours<br/>which symptoms mattered?]:::interface
+    F[Overall evidence<br/>what evidence supports it?]:::interface
+
+    SH[SHAP strategy<br/>explain_shap raw tool]:::tool
+    CF[Counterfactual strategy<br/>explain_counterfactual raw tool]:::tool
+    RA[RAG strategy<br/>explain_rag raw tool]:::tool
+    HY[Hybrid strategy<br/>SHAP plus RAG plus counterfactual tools]:::tool
+
+    GS[generate_shap_explanation]:::generator
+    GC[generate_cf_explanation]:::generator
+    GR[generate_rag_explanation]:::generator
+    GH[generate_hybrid_explanation]:::generator
+
+    O[User-facing explanation]:::output
+
+    A --> B
+    B --> C --> SH --> GS --> O
+    B --> D --> CF --> GC --> O
+    B --> E --> RA --> GR --> O
+    B --> F --> HY --> GH --> O
+
+    classDef interface fill:#F8FAFC,stroke:#334155,color:#111827,rx:8,ry:8;
+    classDef tool fill:#ECFDF5,stroke:#047857,color:#0F172A,rx:8,ry:8;
+    classDef generator fill:#FFF7ED,stroke:#C2410C,color:#0F172A,rx:8,ry:8;
+    classDef decision fill:#FFFFFF,stroke:#64748B,color:#0F172A,rx:4,ry:4;
+    classDef output fill:#F8FAFC,stroke:#0F766E,color:#0F172A,rx:8,ry:8;

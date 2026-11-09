@@ -1,0 +1,13 @@
+severity,dimension,n_trials,n_participants,mean,sd,median,iqr,ci95_low,ci95_high
+no depression,Clarity,64,14,3.875,1.327,4.0,2.0,3.55,4.2
+moderate,Clarity,98,15,3.847,1.187,4.0,1.0,3.612,4.082
+severe,Clarity,101,14,3.881,1.259,4.0,1.0,3.636,4.127
+no depression,Correctness,64,14,3.594,1.33,4.0,2.0,3.268,3.92
+moderate,Correctness,98,15,3.786,1.048,4.0,2.0,3.578,3.993
+severe,Correctness,101,14,3.812,1.138,4.0,2.0,3.59,4.034
+no depression,Helpfulness,64,14,3.656,1.324,4.0,2.0,3.332,3.981
+moderate,Helpfulness,98,15,3.622,1.05,4.0,1.0,3.414,3.83
+severe,Helpfulness,101,14,3.693,1.111,4.0,1.0,3.476,3.91
+no depression,Trust,64,14,3.469,1.309,4.0,1.0,3.148,3.789
+moderate,Trust,98,15,3.561,1.066,4.0,1.0,3.35,3.772
+severe,Trust,101,14,3.762,1.088,4.0,2.0,3.55,3.974

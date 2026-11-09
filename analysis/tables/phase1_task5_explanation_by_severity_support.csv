@@ -1,0 +1,13 @@
+explanation_type,severity,n_trials,n_participants
+SHAP,no depression,20,10
+SHAP,moderate,24,13
+SHAP,severe,26,12
+COUNTERFACTUAL,no depression,15,10
+COUNTERFACTUAL,moderate,25,13
+COUNTERFACTUAL,severe,26,14
+RAG,no depression,17,11
+RAG,moderate,26,12
+RAG,severe,21,12
+HYBRID,no depression,12,9
+HYBRID,moderate,23,13
+HYBRID,severe,28,14

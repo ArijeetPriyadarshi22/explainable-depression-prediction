@@ -1,0 +1,5 @@
+dimension,agentic_xai_descriptive_mean,mentallama_descriptive_mean,estimated_difference_agentic_minus_mentallama,ci95_low,ci95_high,raw_p_value,holm_adjusted_p_value,effect_size_metric,effect_size,n_trials,n_participants,converged,model
+Helpfulness,3.736,3.759,-0.0159,-0.4035,0.3717,0.935991,1.0,standardized difference using model residual SD,-0.0155,107,14,True,rating ~ explanation_system + (1 | participant)
+Correctness,3.943,3.63,0.3218,-0.0539,0.6975,0.09316,0.37264,standardized difference using model residual SD,0.3249,107,14,True,rating ~ explanation_system + (1 | participant)
+Clarity,3.981,3.833,0.1482,-0.1739,0.4704,0.367168,1.0,standardized difference using model residual SD,0.1744,107,14,True,rating ~ explanation_system + (1 | participant)
+Trust,3.623,3.463,0.1678,-0.2271,0.5627,0.404926,1.0,standardized difference using model residual SD,0.1612,107,14,True,rating ~ explanation_system + (1 | participant)

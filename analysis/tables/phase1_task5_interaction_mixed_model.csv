@@ -1,0 +1,5 @@
+dimension,method,model_comparison,n_trials,n_participants,lr_chi2,df,p_value,converged,interpretation_note
+Clarity,Exploratory mixed-model interaction likelihood-ratio test,explanation_type + severity vs explanation_type * severity,263,16,8.5058,6,0.203337,True,Exploratory only; do not make strong claims from small subgroups.
+Correctness,Exploratory mixed-model interaction likelihood-ratio test,explanation_type + severity vs explanation_type * severity,263,16,7.1457,6,0.307582,True,Exploratory only; do not make strong claims from small subgroups.
+Helpfulness,Exploratory mixed-model interaction likelihood-ratio test,explanation_type + severity vs explanation_type * severity,263,16,3.5123,6,0.742338,True,Exploratory only; do not make strong claims from small subgroups.
+Trust,Exploratory mixed-model interaction likelihood-ratio test,explanation_type + severity vs explanation_type * severity,263,16,2.2273,6,0.897654,True,Exploratory only; do not make strong claims from small subgroups.

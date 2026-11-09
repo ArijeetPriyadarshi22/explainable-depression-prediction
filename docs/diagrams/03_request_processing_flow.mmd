@@ -1,0 +1,45 @@
+%% End-to-end request processing in the adaptive MCP Agentic XAI path.
+flowchart TB
+    A[Receive text sample<br/>and explanation question]:::interface
+    B[Start MCP stdio session<br/>and discover tools]:::controller
+    C[Call predict_depression]:::tool
+    D[Prediction context<br/>label, confidence, severity score]:::data
+    E[Ask ReAct controller<br/>for one next action]:::controller
+    F{Selected action}:::decision
+    G[Call explain_shap<br/>MCP tool]:::tool
+    H[Call explain_rag<br/>MCP tool]:::tool
+    I[Call explain_counterfactual<br/>MCP tool]:::tool
+    J[Deserialize raw result<br/>and summarize observation]:::controller
+    K{More evidence needed<br/>and steps remain?}:::decision
+    L[Route available raw results<br/>to final generator]:::generator
+    M{Raw result set}:::decision
+    N[SHAP generator]:::generator
+    O[RAG generator]:::generator
+    P[Counterfactual generator]:::generator
+    Q[Hybrid generator]:::generator
+    R[Final user-facing explanation]:::output
+    X[Deterministic fallback<br/>if controller fails]:::controller
+
+    A --> B --> C --> D --> E --> F
+    E -. controller error .-> X
+    X --> F
+    F -->|explain_shap| G --> J
+    F -->|explain_rag| H --> J
+    F -->|explain_counterfactual| I --> J
+    F -->|finish| L
+    J --> K
+    K -->|yes| E
+    K -->|no| L
+    L --> M
+    M -->|only SHAP| N --> R
+    M -->|only RAG| O --> R
+    M -->|only counterfactual| P --> R
+    M -->|multiple tools| Q --> R
+
+    classDef interface fill:#F8FAFC,stroke:#334155,color:#111827,rx:8,ry:8;
+    classDef controller fill:#E0F2FE,stroke:#0369A1,color:#0F172A,rx:8,ry:8;
+    classDef tool fill:#ECFDF5,stroke:#047857,color:#0F172A,rx:8,ry:8;
+    classDef generator fill:#FFF7ED,stroke:#C2410C,color:#0F172A,rx:8,ry:8;
+    classDef data fill:#F1F5F9,stroke:#475569,color:#0F172A,rx:8,ry:8;
+    classDef decision fill:#FFFFFF,stroke:#64748B,color:#0F172A,rx:4,ry:4;
+    classDef output fill:#F8FAFC,stroke:#0F766E,color:#0F172A,rx:8,ry:8;

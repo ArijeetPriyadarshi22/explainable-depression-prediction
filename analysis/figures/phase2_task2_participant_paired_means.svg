@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="788" viewBox="0 0 920 788">
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#202020}.title{font-size:18px;font-weight:700}.label{font-size:13px;font-weight:700}.small{font-size:11px}.tick{font-size:10px}.axis{stroke:#333;stroke-width:1}.grid{stroke:#dedede;stroke-width:1}
+</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="18" y="28" class="title">Phase 2 Participant-Level Paired Means</text>
+<text x="18" y="72" class="label">Clarity</text>
+<text x="160" y="72" class="small" text-anchor="middle">Agentic XAI</text>
+<text x="790" y="72" class="small" text-anchor="middle">MentaLLaMA</text>
+<line x1="193.75" y1="92" x2="857.50" y2="92" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="193.75" cy="92" r="3" fill="#2f6f73"/>
+<circle cx="857.50" cy="92" r="3" fill="#9b4d3d"/>
+<line x1="193.75" y1="101" x2="868.75" y2="101" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="193.75" cy="101" r="3" fill="#2f6f73"/>
+<circle cx="868.75" cy="101" r="3" fill="#9b4d3d"/>
+<line x1="205.00" y1="110" x2="835.00" y2="110" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="205.00" cy="110" r="3" fill="#2f6f73"/>
+<circle cx="835.00" cy="110" r="3" fill="#9b4d3d"/>
+<line x1="216.25" y1="119" x2="857.50" y2="119" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="216.25" cy="119" r="3" fill="#2f6f73"/>
+<circle cx="857.50" cy="119" r="3" fill="#9b4d3d"/>
+<line x1="205.00" y1="128" x2="812.50" y2="128" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="205.00" cy="128" r="3" fill="#2f6f73"/>
+<circle cx="812.50" cy="128" r="3" fill="#9b4d3d"/>
+<line x1="216.25" y1="137" x2="790.00" y2="137" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="216.25" cy="137" r="3" fill="#2f6f73"/>
+<circle cx="790.00" cy="137" r="3" fill="#9b4d3d"/>
+<line x1="160.00" y1="146" x2="801.25" y2="146" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="160.00" cy="146" r="3" fill="#2f6f73"/>
+<circle cx="801.25" cy="146" r="3" fill="#9b4d3d"/>
+<line x1="160.00" y1="155" x2="812.50" y2="155" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="160.00" cy="155" r="3" fill="#2f6f73"/>
+<circle cx="812.50" cy="155" r="3" fill="#9b4d3d"/>
+<line x1="216.25" y1="164" x2="801.25" y2="164" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="216.25" cy="164" r="3" fill="#2f6f73"/>
+<circle cx="801.25" cy="164" r="3" fill="#9b4d3d"/>
+<line x1="205.00" y1="173" x2="835.00" y2="173" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="205.00" cy="173" r="3" fill="#2f6f73"/>
+<circle cx="835.00" cy="173" r="3" fill="#9b4d3d"/>
+<line x1="205.00" y1="182" x2="812.50" y2="182" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="205.00" cy="182" r="3" fill="#2f6f73"/>
+<circle cx="812.50" cy="182" r="3" fill="#9b4d3d"/>
+<line x1="205.00" y1="191" x2="835.00" y2="191" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="205.00" cy="191" r="3" fill="#2f6f73"/>
+<circle cx="835.00" cy="191" r="3" fill="#9b4d3d"/>
+<line x1="238.75" y1="200" x2="868.75" y2="200" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="238.75" cy="200" r="3" fill="#2f6f73"/>
+<circle cx="868.75" cy="200" r="3" fill="#9b4d3d"/>
+<line x1="238.75" y1="209" x2="801.25" y2="209" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="238.75" cy="209" r="3" fill="#2f6f73"/>
+<circle cx="801.25" cy="209" r="3" fill="#9b4d3d"/>
+<line x1="70" y1="216" x2="250" y2="216" class="axis"/>
+<line x1="700" y1="216" x2="880" y2="216" class="axis"/>
+<text x="18" y="247" class="label">Correctness</text>
+<text x="160" y="247" class="small" text-anchor="middle">Agentic XAI</text>
+<text x="790" y="247" class="small" text-anchor="middle">MentaLLaMA</text>
+<line x1="238.75" y1="267" x2="880.00" y2="267" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="238.75" cy="267" r="3" fill="#2f6f73"/>
+<circle cx="880.00" cy="267" r="3" fill="#9b4d3d"/>
+<line x1="216.25" y1="276" x2="868.75" y2="276" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="216.25" cy="276" r="3" fill="#2f6f73"/>
+<circle cx="868.75" cy="276" r="3" fill="#9b4d3d"/>
+<line x1="205.00" y1="285" x2="778.75" y2="285" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="205.00" cy="285" r="3" fill="#2f6f73"/>
+<circle cx="778.75" cy="285" r="3" fill="#9b4d3d"/>
+<line x1="171.25" y1="294" x2="790.00" y2="294" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="171.25" cy="294" r="3" fill="#2f6f73"/>
+<circle cx="790.00" cy="294" r="3" fill="#9b4d3d"/>
+<line x1="205.00" y1="303" x2="778.75" y2="303" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="205.00" cy="303" r="3" fill="#2f6f73"/>
+<circle cx="778.75" cy="303" r="3" fill="#9b4d3d"/>
+<line x1="171.25" y1="312" x2="835.00" y2="312" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="171.25" cy="312" r="3" fill="#2f6f73"/>
+<circle cx="835.00" cy="312" r="3" fill="#9b4d3d"/>
+<line x1="182.50" y1="321" x2="756.25" y2="321" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="182.50" cy="321" r="3" fill="#2f6f73"/>
+<circle cx="756.25" cy="321" r="3" fill="#9b4d3d"/>
+<line x1="205.00" y1="330" x2="812.50" y2="330" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="205.00" cy="330" r="3" fill="#2f6f73"/>
+<circle cx="812.50" cy="330" r="3" fill="#9b4d3d"/>
+<line x1="238.75" y1="339" x2="835.00" y2="339" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="238.75" cy="339" r="3" fill="#2f6f73"/>
+<circle cx="835.00" cy="339" r="3" fill="#9b4d3d"/>
+<line x1="205.00" y1="348" x2="880.00" y2="348" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="205.00" cy="348" r="3" fill="#2f6f73"/>
+<circle cx="880.00" cy="348" r="3" fill="#9b4d3d"/>
+<line x1="171.25" y1="357" x2="790.00" y2="357" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="171.25" cy="357" r="3" fill="#2f6f73"/>
+<circle cx="790.00" cy="357" r="3" fill="#9b4d3d"/>
+<line x1="160.00" y1="366" x2="812.50" y2="366" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="160.00" cy="366" r="3" fill="#2f6f73"/>
+<circle cx="812.50" cy="366" r="3" fill="#9b4d3d"/>
+<line x1="238.75" y1="375" x2="835.00" y2="375" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="238.75" cy="375" r="3" fill="#2f6f73"/>
+<circle cx="835.00" cy="375" r="3" fill="#9b4d3d"/>
+<line x1="227.50" y1="384" x2="835.00" y2="384" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="227.50" cy="384" r="3" fill="#2f6f73"/>
+<circle cx="835.00" cy="384" r="3" fill="#9b4d3d"/>
+<line x1="70" y1="391" x2="250" y2="391" class="axis"/>
+<line x1="700" y1="391" x2="880" y2="391" class="axis"/>
+<text x="18" y="422" class="label">Helpfulness</text>
+<text x="160" y="422" class="small" text-anchor="middle">Agentic XAI</text>
+<text x="790" y="422" class="small" text-anchor="middle">MentaLLaMA</text>
+<line x1="216.25" y1="442" x2="868.75" y2="442" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="216.25" cy="442" r="3" fill="#2f6f73"/>
+<circle cx="868.75" cy="442" r="3" fill="#9b4d3d"/>
+<line x1="193.75" y1="451" x2="868.75" y2="451" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="193.75" cy="451" r="3" fill="#2f6f73"/>
+<circle cx="868.75" cy="451" r="3" fill="#9b4d3d"/>
+<line x1="193.75" y1="460" x2="801.25" y2="460" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="193.75" cy="460" r="3" fill="#2f6f73"/>
+<circle cx="801.25" cy="460" r="3" fill="#9b4d3d"/>
+<line x1="182.50" y1="469" x2="823.75" y2="469" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="182.50" cy="469" r="3" fill="#2f6f73"/>
+<circle cx="823.75" cy="469" r="3" fill="#9b4d3d"/>
+<line x1="193.75" y1="478" x2="778.75" y2="478" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="193.75" cy="478" r="3" fill="#2f6f73"/>
+<circle cx="778.75" cy="478" r="3" fill="#9b4d3d"/>
+<line x1="171.25" y1="487" x2="835.00" y2="487" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="171.25" cy="487" r="3" fill="#2f6f73"/>
+<circle cx="835.00" cy="487" r="3" fill="#9b4d3d"/>
+<line x1="148.75" y1="496" x2="767.50" y2="496" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="148.75" cy="496" r="3" fill="#2f6f73"/>
+<circle cx="767.50" cy="496" r="3" fill="#9b4d3d"/>
+<line x1="148.75" y1="505" x2="812.50" y2="505" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="148.75" cy="505" r="3" fill="#2f6f73"/>
+<circle cx="812.50" cy="505" r="3" fill="#9b4d3d"/>
+<line x1="216.25" y1="514" x2="812.50" y2="514" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="216.25" cy="514" r="3" fill="#2f6f73"/>
+<circle cx="812.50" cy="514" r="3" fill="#9b4d3d"/>
+<line x1="250.00" y1="523" x2="880.00" y2="523" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="250.00" cy="523" r="3" fill="#2f6f73"/>
+<circle cx="880.00" cy="523" r="3" fill="#9b4d3d"/>
+<line x1="216.25" y1="532" x2="812.50" y2="532" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="216.25" cy="532" r="3" fill="#2f6f73"/>
+<circle cx="812.50" cy="532" r="3" fill="#9b4d3d"/>
+<line x1="160.00" y1="541" x2="835.00" y2="541" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="160.00" cy="541" r="3" fill="#2f6f73"/>
+<circle cx="835.00" cy="541" r="3" fill="#9b4d3d"/>
+<line x1="227.50" y1="550" x2="835.00" y2="550" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="227.50" cy="550" r="3" fill="#2f6f73"/>
+<circle cx="835.00" cy="550" r="3" fill="#9b4d3d"/>
+<line x1="227.50" y1="559" x2="835.00" y2="559" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="227.50" cy="559" r="3" fill="#2f6f73"/>
+<circle cx="835.00" cy="559" r="3" fill="#9b4d3d"/>
+<line x1="70" y1="566" x2="250" y2="566" class="axis"/>
+<line x1="700" y1="566" x2="880" y2="566" class="axis"/>
+<text x="18" y="597" class="label">Trust</text>
+<text x="160" y="597" class="small" text-anchor="middle">Agentic XAI</text>
+<text x="790" y="597" class="small" text-anchor="middle">MentaLLaMA</text>
+<line x1="205.00" y1="617" x2="857.50" y2="617" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="205.00" cy="617" r="3" fill="#2f6f73"/>
+<circle cx="857.50" cy="617" r="3" fill="#9b4d3d"/>
+<line x1="160.00" y1="626" x2="835.00" y2="626" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="160.00" cy="626" r="3" fill="#2f6f73"/>
+<circle cx="835.00" cy="626" r="3" fill="#9b4d3d"/>
+<line x1="193.75" y1="635" x2="767.50" y2="635" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="193.75" cy="635" r="3" fill="#2f6f73"/>
+<circle cx="767.50" cy="635" r="3" fill="#9b4d3d"/>
+<line x1="193.75" y1="644" x2="846.25" y2="644" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="193.75" cy="644" r="3" fill="#2f6f73"/>
+<circle cx="846.25" cy="644" r="3" fill="#9b4d3d"/>
+<line x1="193.75" y1="653" x2="767.50" y2="653" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="193.75" cy="653" r="3" fill="#2f6f73"/>
+<circle cx="767.50" cy="653" r="3" fill="#9b4d3d"/>
+<line x1="182.50" y1="662" x2="846.25" y2="662" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="182.50" cy="662" r="3" fill="#2f6f73"/>
+<circle cx="846.25" cy="662" r="3" fill="#9b4d3d"/>
+<line x1="182.50" y1="671" x2="767.50" y2="671" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="182.50" cy="671" r="3" fill="#2f6f73"/>
+<circle cx="767.50" cy="671" r="3" fill="#9b4d3d"/>
+<line x1="103.75" y1="680" x2="745.00" y2="680" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="103.75" cy="680" r="3" fill="#2f6f73"/>
+<circle cx="745.00" cy="680" r="3" fill="#9b4d3d"/>
+<line x1="216.25" y1="689" x2="812.50" y2="689" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="216.25" cy="689" r="3" fill="#2f6f73"/>
+<circle cx="812.50" cy="689" r="3" fill="#9b4d3d"/>
+<line x1="205.00" y1="698" x2="857.50" y2="698" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="205.00" cy="698" r="3" fill="#2f6f73"/>
+<circle cx="857.50" cy="698" r="3" fill="#9b4d3d"/>
+<line x1="171.25" y1="707" x2="756.25" y2="707" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="171.25" cy="707" r="3" fill="#2f6f73"/>
+<circle cx="756.25" cy="707" r="3" fill="#9b4d3d"/>
+<line x1="160.00" y1="716" x2="823.75" y2="716" stroke="#9b4d3d" stroke-width="1.4" opacity="0.68"/>
+<circle cx="160.00" cy="716" r="3" fill="#2f6f73"/>
+<circle cx="823.75" cy="716" r="3" fill="#9b4d3d"/>
+<line x1="250.00" y1="725" x2="846.25" y2="725" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="250.00" cy="725" r="3" fill="#2f6f73"/>
+<circle cx="846.25" cy="725" r="3" fill="#9b4d3d"/>
+<line x1="227.50" y1="734" x2="846.25" y2="734" stroke="#2f6f73" stroke-width="1.4" opacity="0.68"/>
+<circle cx="227.50" cy="734" r="3" fill="#2f6f73"/>
+<circle cx="846.25" cy="734" r="3" fill="#9b4d3d"/>
+<line x1="70" y1="741" x2="250" y2="741" class="axis"/>
+<line x1="700" y1="741" x2="880" y2="741" class="axis"/>
+</svg>

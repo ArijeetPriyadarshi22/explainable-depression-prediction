@@ -1,0 +1,33 @@
+# Official Model Context Protocol Python SDK v2
+mcp[cli]>=2
+
+# Google Gemini SDK
+google-generativeai
+
+# Machine Learning + XAI
+scikit-learn
+pandas
+numpy
+shap
+dice-ml
+sentence-transformers
+faiss-cpu
+joblib
+
+# LLMs (offline option)
+transformers
+torch
+accelerate
+sentencepiece
+llama-cpp-python
+openai
+
+# Utilities
+jsonschema>=4.21.1
+scipy
+statsmodels
+pingouin
+matplotlib
+
+# telegram bot
+python-telegram-bot>=21.0

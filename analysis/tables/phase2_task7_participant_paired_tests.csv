@@ -1,0 +1,5 @@
+dimension,n_paired_participants,mean_paired_difference,median_paired_difference,agentic_xai_higher_n,mentallama_higher_n,tied_n,test,test_statistic,raw_p_value,holm_adjusted_p_value,effect_size_metric,effect_size,interpretation_note
+Helpfulness,14,0.0,0.125,7,6,1,Wilcoxon signed-rank,44.0,0.91587,1.0,rank-biserial correlation,-0.033,Wilcoxon signed-rank test on participant-level paired differences.
+Correctness,14,0.2679,0.375,9,5,0,Wilcoxon signed-rank,33.0,0.241211,0.964844,rank-biserial correlation,0.3714,Wilcoxon signed-rank test on participant-level paired differences.
+Clarity,14,0.1429,0.0,5,5,4,Wilcoxon signed-rank,20.5,0.473805,1.0,rank-biserial correlation,0.2545,Wilcoxon signed-rank test on participant-level paired differences.
+Trust,14,0.1429,0.0,7,7,0,Wilcoxon signed-rank,39.5,0.463135,1.0,rank-biserial correlation,0.2476,Wilcoxon signed-rank test on participant-level paired differences.

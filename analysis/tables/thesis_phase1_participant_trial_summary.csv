@@ -1,0 +1,13 @@
+Measure,Value
+Participants,16.0
+Trials,263.0
+Median trials per participant,20.0
+Minimum trials per participant,2.0
+Maximum trials per participant,20.0
+Trials: Counterfactual,66.0
+Trials: Hybrid,63.0
+Trials: RAG,64.0
+Trials: SHAP,70.0
+Trials: Moderate,98.0
+Trials: No depression,64.0
+Trials: Severe,101.0

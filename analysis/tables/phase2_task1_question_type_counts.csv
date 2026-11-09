@@ -1,0 +1,5 @@
+question_type,n_trials
+counterfactual,27
+hybrid,27
+rag,26
+shap,27

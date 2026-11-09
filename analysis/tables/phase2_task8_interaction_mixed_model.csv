@@ -1,0 +1,5 @@
+dimension,method,model_comparison,n_trials,n_participants,lr_chi2,df,p_value,converged,interpretation_note
+Helpfulness,Exploratory mixed-model interaction likelihood-ratio test,system + question_type vs system * question_type,107,14,1.2507,3,0.740881,True,Secondary/exploratory; do not overinterpret individual question-type subgroups.
+Correctness,Exploratory mixed-model interaction likelihood-ratio test,system + question_type vs system * question_type,107,14,0.2545,3,0.968338,True,Secondary/exploratory; do not overinterpret individual question-type subgroups.
+Clarity,Exploratory mixed-model interaction likelihood-ratio test,system + question_type vs system * question_type,107,14,1.6386,3,0.650662,True,Secondary/exploratory; do not overinterpret individual question-type subgroups.
+Trust,Exploratory mixed-model interaction likelihood-ratio test,system + question_type vs system * question_type,107,14,1.2394,3,0.743579,True,Secondary/exploratory; do not overinterpret individual question-type subgroups.

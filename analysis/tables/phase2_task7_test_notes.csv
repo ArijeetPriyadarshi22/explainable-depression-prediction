@@ -1,0 +1,3 @@
+dimension,note
+Helpfulness,Exact p-value calculation does not work if there are zeros. Switching to normal approximation.
+Clarity,Exact p-value calculation does not work if there are zeros. Switching to normal approximation.

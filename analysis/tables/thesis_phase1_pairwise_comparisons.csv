@@ -1,0 +1,7 @@
+Rating dimension,Comparison,Mean difference,95% CI lower,95% CI upper,Raw p-value,Holm-adjusted p-value,Effect size metric,Effect size
+Clarity,SHAP - Counterfactual,0.1921,-0.0478,0.4319,0.116554,0.466216,standardized difference using model residual SD,0.2778
+Clarity,SHAP - RAG,-0.1168,-0.3552,0.1217,0.33718,1.0,standardized difference using model residual SD,-0.1689
+Clarity,SHAP - Hybrid,-0.1032,-0.3436,0.1373,0.400496,1.0,standardized difference using model residual SD,-0.1492
+Clarity,Counterfactual - RAG,-0.3088,-0.5502,-0.0674,0.012152,0.072912,standardized difference using model residual SD,-0.4467
+Clarity,Counterfactual - Hybrid,-0.2952,-0.5383,-0.0521,0.017323,0.086615,standardized difference using model residual SD,-0.427
+Clarity,RAG - Hybrid,0.0136,-0.2308,0.258,0.913109,1.0,standardized difference using model residual SD,0.0197

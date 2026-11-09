@@ -1,0 +1,9 @@
+system,question_type,n_trials,n_participants
+mentallama,SHAP,14,14
+mentallama,Counterfactual,13,13
+mentallama,RAG,13,13
+mentallama,Hybrid,14,14
+agentic_xai,SHAP,13,13
+agentic_xai,Counterfactual,14,14
+agentic_xai,RAG,13,13
+agentic_xai,Hybrid,13,13

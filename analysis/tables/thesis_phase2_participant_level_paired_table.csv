@@ -1,0 +1,5 @@
+Rating dimension,N paired participants,Mean paired difference,Median paired difference,Agentic XAI higher (n),MentaLLaMA higher (n),Tied (n),Test,Test statistic,Raw p-value,Holm-adjusted p-value,Effect size metric,Effect size,Interpretation note
+Helpfulness,14,0.0,0.125,7,6,1,Wilcoxon signed-rank,44.0,0.91587,1.0,rank-biserial correlation,-0.033,Wilcoxon signed-rank test on participant-level paired differences.
+Correctness,14,0.2679,0.375,9,5,0,Wilcoxon signed-rank,33.0,0.241211,0.964844,rank-biserial correlation,0.3714,Wilcoxon signed-rank test on participant-level paired differences.
+Clarity,14,0.1429,0.0,5,5,4,Wilcoxon signed-rank,20.5,0.473805,1.0,rank-biserial correlation,0.2545,Wilcoxon signed-rank test on participant-level paired differences.
+Trust,14,0.1429,0.0,7,7,0,Wilcoxon signed-rank,39.5,0.463135,1.0,rank-biserial correlation,0.2476,Wilcoxon signed-rank test on participant-level paired differences.

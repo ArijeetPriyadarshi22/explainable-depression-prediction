@@ -1,0 +1,21 @@
+%% High-level architecture of the implemented MCP-based Agentic XAI system.
+flowchart TB
+    U[Participant or researcher<br/>text sample and question]:::interface
+    S[Agentic XAI system<br/>MCP client plus controller]:::controller
+    P[Depression prediction<br/>shared local classifier]:::tool
+    E[Explanation evidence tools<br/>SHAP, RAG, counterfactual]:::tool
+    G[Client-side explanation generation<br/>Gemini prompt builders]:::generator
+    O[Prediction explanation<br/>returned to user or study cache]:::output
+
+    U --> S
+    S --> P
+    S --> E
+    P --> G
+    E --> G
+    G --> O
+
+    classDef interface fill:#F8FAFC,stroke:#334155,color:#111827,rx:8,ry:8;
+    classDef controller fill:#E0F2FE,stroke:#0369A1,color:#0F172A,rx:8,ry:8;
+    classDef tool fill:#ECFDF5,stroke:#047857,color:#0F172A,rx:8,ry:8;
+    classDef generator fill:#FFF7ED,stroke:#C2410C,color:#0F172A,rx:8,ry:8;
+    classDef output fill:#F1F5F9,stroke:#475569,color:#0F172A,rx:8,ry:8;

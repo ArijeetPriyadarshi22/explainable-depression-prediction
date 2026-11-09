@@ -1,0 +1,86 @@
+%% Detailed architecture of the current MCP Agentic XAI implementation.
+flowchart LR
+    subgraph UI[User and Study Interface]
+        T[Telegram bot<br/>bot.py]:::interface
+        Q[Text sample<br/>and fixed or open question]:::interface
+        R[Displayed explanation<br/>and ratings]:::output
+        C[Saved study responses<br/>data/study_responses.json]:::data
+    end
+
+    subgraph Client[Agent and Client Layer]
+        MC[MCP client<br/>mcp_client.py]:::controller
+        RC[ReAct controller<br/>agent_controller.py]:::controller
+        FG[Final explanation router<br/>_generate_final_explanation]:::generator
+    end
+
+    subgraph Server[MCP Server Layer]
+        MS[MCP stdio server<br/>mcp_server.py]:::server
+        PD[predict_depression]:::tool
+        SH[explain_shap]:::tool
+        RA[explain_rag]:::tool
+        CF[explain_counterfactual]:::tool
+    end
+
+    subgraph Explain[Explanation Generation Layer]
+        GS[generate_shap_explanation]:::generator
+        GR[generate_rag_explanation]:::generator
+        GC[generate_cf_explanation]:::generator
+        GH[generate_hybrid_explanation]:::generator
+        LLM[Gemini via<br/>shared.llm_client]:::llm
+    end
+
+    subgraph Data[Data and Model Layer]
+        DM[TF-IDF depression model<br/>shared/depression_model.py]:::data
+        J[Model cache<br/>depression_tfidf_lr.joblib]:::data
+        KB[PHQ-8 knowledge base<br/>phq8_knowledge_base.csv]:::data
+        VS[Sentence embeddings<br/>and FAISS index]:::data
+        TR[Training examples<br/>shared/training_examples.py]:::data
+    end
+
+    Q --> T
+    T --> C
+    T --> MC
+    MC --> RC
+    RC -. chooses next action .-> MC
+    MC --> MS
+    MS --> PD
+    MS --> SH
+    MS --> RA
+    MS --> CF
+
+    PD --> DM
+    SH --> DM
+    RA --> DM
+    RA --> VS
+    CF --> DM
+    CF --> LLM
+
+    DM --> J
+    DM --> TR
+    VS --> KB
+
+    PD --> MC
+    SH --> MC
+    RA --> MC
+    CF --> MC
+    MC --> FG
+    FG --> GS
+    FG --> GR
+    FG --> GC
+    FG --> GH
+    GS --> LLM
+    GR --> LLM
+    GC --> LLM
+    GH --> LLM
+    FG --> T
+    C --> T
+    T --> R
+
+    classDef interface fill:#F8FAFC,stroke:#334155,color:#111827,rx:8,ry:8;
+    classDef controller fill:#E0F2FE,stroke:#0369A1,color:#0F172A,rx:8,ry:8;
+    classDef server fill:#DBEAFE,stroke:#1D4ED8,color:#0F172A,rx:8,ry:8;
+    classDef tool fill:#ECFDF5,stroke:#047857,color:#0F172A,rx:8,ry:8;
+    classDef generator fill:#FFF7ED,stroke:#C2410C,color:#0F172A,rx:8,ry:8;
+    classDef llm fill:#FEF3C7,stroke:#B45309,color:#0F172A,rx:8,ry:8;
+    classDef data fill:#F1F5F9,stroke:#475569,color:#0F172A,rx:8,ry:8;
+    classDef output fill:#F8FAFC,stroke:#0F766E,color:#0F172A,rx:8,ry:8;

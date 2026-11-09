@@ -1,0 +1,7 @@
+dimension_1,dimension_2,n_pairwise_rows,pearson_r
+Helpfulness,Correctness,107,0.7436
+Helpfulness,Clarity,107,0.4547
+Helpfulness,Trust,107,0.6778
+Correctness,Clarity,107,0.3518
+Correctness,Trust,107,0.6908
+Clarity,Trust,107,0.46

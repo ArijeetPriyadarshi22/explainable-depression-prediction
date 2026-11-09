@@ -1,0 +1,50 @@
+%% Runtime sequence for MCP tool execution and client-side explanation generation.
+sequenceDiagram
+    autonumber
+    actor User as User or study script
+    participant Bot as Telegram bot / caller
+    participant Client as MCP client
+    participant Controller as ReAct controller
+    participant Server as MCP stdio server
+    participant Tools as Prediction and XAI tools
+    participant Generator as Client-side explanation generator
+    participant Gemini as Gemini LLM
+
+    User->>Bot: Text sample and question
+    Bot->>Client: run_mcp_pipeline or run_fixed_tool_pipeline
+    Client->>Server: initialize stdio MCP session
+    Client->>Server: list_tools
+    Server-->>Client: predict_depression, explain_shap, explain_rag, explain_counterfactual
+    Client->>Server: call_tool predict_depression(text)
+    Server->>Tools: predict_proba and classify_severity
+    Tools-->>Server: prediction payload
+    Server-->>Client: structured prediction
+
+    alt Adaptive ReAct path
+        Client->>Controller: prediction, question, observations
+        Controller->>Gemini: JSON action-selection prompt
+        Gemini-->>Controller: next action or finish
+    else Fixed study path
+        Bot->>Client: fixed question type
+        Client->>Client: map question type to tool action
+    end
+
+    loop Up to three explanation actions
+        Client->>Server: call_tool selected explanation tool
+        Server->>Tools: run raw SHAP, RAG, or counterfactual pipeline
+        Tools-->>Server: raw result object
+        Server-->>Client: serialized raw result
+        Client->>Client: deserialize and record observation
+        opt Adaptive path continues
+            Client->>Controller: updated observations
+            Controller->>Gemini: next-action prompt
+            Gemini-->>Controller: next action or finish
+        end
+    end
+
+    Client->>Generator: raw result set and prediction
+    Generator->>Gemini: final explanation prompt
+    Gemini-->>Generator: natural-language explanation
+    Generator-->>Client: final explanation
+    Client-->>Bot: result dictionary
+    Bot-->>User: explanation

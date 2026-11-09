@@ -1,0 +1,31 @@
+%% Implemented within-participant study flow.
+flowchart TB
+    A[Participant starts<br/>Telegram study]:::interface
+    B[Select 8 passages<br/>balanced by severity rotation]:::process
+    C[Show text sample]:::interface
+    D[Compute or load prediction<br/>shared classifier]:::tool
+    E[Show prediction]:::interface
+    F[Participant chooses<br/>one fixed question]:::interface
+    G[Assign hidden system<br/>Agentic XAI or MentaLLaMA]:::process
+    H{Assigned system}:::decision
+    I[Load saved Agentic XAI response<br/>data/study_responses.json]:::data
+    J[Load saved MentaLLaMA response<br/>data/study_responses.json]:::data
+    K[Display one explanation]:::output
+    L[Collect four Likert ratings<br/>answered, supported,<br/>understandable, confidence]:::interface
+    M[Append trial record<br/>within_participant_experiment_records.csv]:::data
+    N{More samples?}:::decision
+    O[Study complete]:::output
+
+    A --> B --> C --> D --> E --> F --> G --> H
+    H -->|Agentic XAI| I --> K
+    H -->|MentaLLaMA| J --> K
+    K --> L --> M --> N
+    N -->|yes| C
+    N -->|no| O
+
+    classDef interface fill:#F8FAFC,stroke:#334155,color:#111827,rx:8,ry:8;
+    classDef process fill:#E0F2FE,stroke:#0369A1,color:#0F172A,rx:8,ry:8;
+    classDef tool fill:#ECFDF5,stroke:#047857,color:#0F172A,rx:8,ry:8;
+    classDef data fill:#F1F5F9,stroke:#475569,color:#0F172A,rx:8,ry:8;
+    classDef decision fill:#FFFFFF,stroke:#64748B,color:#0F172A,rx:4,ry:4;
+    classDef output fill:#F8FAFC,stroke:#0F766E,color:#0F172A,rx:8,ry:8;

@@ -1,0 +1,15 @@
+Measure,Value
+Participants,14.0
+Trials,107.0
+Median trials per participant,8.0
+Minimum trials per participant,3.0
+Maximum trials per participant,8.0
+Trials: Agentic XAI,53.0
+Trials: MentaLLaMA,54.0
+Trials: Moderate,34.0
+Trials: No depression,37.0
+Trials: Severe,36.0
+Trials: Counterfactual questions,27.0
+Trials: Hybrid questions,27.0
+Trials: RAG questions,26.0
+Trials: SHAP questions,27.0

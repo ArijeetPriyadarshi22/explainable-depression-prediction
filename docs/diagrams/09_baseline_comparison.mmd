@@ -1,0 +1,26 @@
+%% Architectural comparison between Agentic XAI and the MentaLLaMA baseline.
+flowchart LR
+    subgraph AXAI[Agentic XAI]
+        A1[Text sample<br/>and question]:::interface
+        A2[MCP client<br/>and controller]:::controller
+        A3[Specialized MCP tools<br/>prediction, SHAP, RAG, counterfactual]:::tool
+        A4[Structured evidence<br/>raw result objects]:::data
+        A5[Explanation generator<br/>Gemini prompt]:::generator
+        A6[Explanation]:::output
+        A1 --> A2 --> A3 --> A4 --> A5 --> A6
+    end
+
+    subgraph BASE[MentaLLaMA Baseline]
+        B1[Text sample<br/>and question]:::interface
+        B2[MentaLLaMA<br/>local Transformers model]:::llm
+        B3[Explanation]:::output
+        B1 --> B2 --> B3
+    end
+
+    classDef interface fill:#F8FAFC,stroke:#334155,color:#111827,rx:8,ry:8;
+    classDef controller fill:#E0F2FE,stroke:#0369A1,color:#0F172A,rx:8,ry:8;
+    classDef tool fill:#ECFDF5,stroke:#047857,color:#0F172A,rx:8,ry:8;
+    classDef data fill:#F1F5F9,stroke:#475569,color:#0F172A,rx:8,ry:8;
+    classDef generator fill:#FFF7ED,stroke:#C2410C,color:#0F172A,rx:8,ry:8;
+    classDef llm fill:#FEF3C7,stroke:#B45309,color:#0F172A,rx:8,ry:8;
+    classDef output fill:#F8FAFC,stroke:#0F766E,color:#0F172A,rx:8,ry:8;

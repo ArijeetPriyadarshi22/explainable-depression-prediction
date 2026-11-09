@@ -1,0 +1,5 @@
+question_type,moderate,none,severe,total
+counterfactual,7,13,7,27
+hybrid,9,9,9,27
+rag,7,8,11,26
+shap,11,7,9,27
